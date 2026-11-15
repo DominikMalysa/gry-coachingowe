@@ -10,6 +10,8 @@ function get_site_transient( $k ) { return false; }
 function set_site_transient( $k, $v, $t = 0 ) {}
 function delete_site_transient( $k ) {}
 function add_filter() {}
+function current_user_can( $c ) { return true; }
+if ( ! defined( 'DAY_IN_SECONDS' ) ) { define( 'DAY_IN_SECONDS', 86400 ); }
 if ( ! defined( 'MINUTE_IN_SECONDS' ) ) { define( 'MINUTE_IN_SECONDS', 60 ); }
 if ( ! defined( 'HOUR_IN_SECONDS' ) ) { define( 'HOUR_IN_SECONDS', 3600 ); }
 function status_header( $c ) { http_response_code( $c ); }
