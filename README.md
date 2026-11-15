@@ -19,9 +19,12 @@ Stare adresy `/stereotyp/` i `/poznaj-siebie-glebiej/` przenoszą na nowe.
 
 ## Aktualizacje
 
-Wtyczka sama sprawdza nowe wydania w tym repozytorium i pokazuje aktualizację
-w panelu WordPressa (Wtyczki → Aktualizuj). Nowa wersja = nowe wydanie (release)
-z plikiem zip o nazwie `ssw-gry-coachingowe-<wersja>.zip`.
+Wtyczka sama sprawdza nowe wersje w tym repozytorium i pokazuje aktualizację
+w panelu WordPressa (Wtyczki → Aktualizuj). Nową wersję wydaje się tak:
+
+1. zbudować paczkę do `wtyczka/ssw-gry-coachingowe-<wersja>.zip`,
+2. wpisać tę samą wersję w `wtyczka/wersja.json` (pola `wersja` i `plik`),
+3. wysłać zmiany do gałęzi `main`.
 
 Dla repozytorium prywatnego trzeba raz dodać token do `wp-config.php`:
 

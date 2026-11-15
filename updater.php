@@ -22,8 +22,15 @@ if ( ! function_exists( 'ssw_gc_token' ) ) {
 	}
 }
 
+if ( ! function_exists( 'ssw_gc_api' ) ) {
+	/** Pobiera plik z repozytorium przez API GitHuba (działa też dla repozytorium prywatnego). */
+	function ssw_gc_api( $path ) {
+		return 'https://api.github.com/repos/' . SSW_GC_REPO . '/contents/' . $path . '?ref=main';
+	}
+}
+
 if ( ! function_exists( 'ssw_gc_latest' ) ) {
-	/** Najnowsze wydanie: array( 'version' => '2.2.0', 'package' => url ) albo null. */
+	/** Najnowsza wersja: array( 'version' => '2.3.0', 'package' => url ) albo null. */
 	function ssw_gc_latest( $force = false ) {
 		$cached = get_site_transient( 'ssw_gc_latest' );
 		if ( ! $force && is_array( $cached ) ) {
@@ -33,7 +40,7 @@ if ( ! function_exists( 'ssw_gc_latest' ) ) {
 		$args = array(
 			'timeout' => 15,
 			'headers' => array(
-				'Accept'     => 'application/vnd.github+json',
+				'Accept'     => 'application/vnd.github.raw',
 				'User-Agent' => 'ssw-gry-coachingowe',
 			),
 		);
@@ -42,33 +49,21 @@ if ( ! function_exists( 'ssw_gc_latest' ) ) {
 			$args['headers']['Authorization'] = 'Bearer ' . $token;
 		}
 
-		$res = wp_remote_get( 'https://api.github.com/repos/' . SSW_GC_REPO . '/releases/latest', $args );
+		$res = wp_remote_get( ssw_gc_api( 'wtyczka/wersja.json' ), $args );
 		if ( is_wp_error( $res ) || 200 !== (int) wp_remote_retrieve_response_code( $res ) ) {
 			set_site_transient( 'ssw_gc_latest', array( 'version' => '', 'package' => '' ), 15 * MINUTE_IN_SECONDS );
 			return null;
 		}
 
 		$body = json_decode( wp_remote_retrieve_body( $res ), true );
-		if ( ! is_array( $body ) || empty( $body['tag_name'] ) ) {
+		if ( ! is_array( $body ) || empty( $body['wersja'] ) || empty( $body['plik'] ) ) {
 			return null;
 		}
 
-		$version = ltrim( (string) $body['tag_name'], 'vV' );
-		$package = '';
-		if ( ! empty( $body['assets'] ) && is_array( $body['assets'] ) ) {
-			foreach ( $body['assets'] as $a ) {
-				if ( isset( $a['name'] ) && substr( (string) $a['name'], -4 ) === '.zip' ) {
-					// Przy prywatnym repozytorium pobiera się przez API (z tokenem), nie przez zwykły link.
-					$package = '' !== ssw_gc_token() ? (string) $a['url'] : (string) $a['browser_download_url'];
-					break;
-				}
-			}
-		}
-		if ( '' === $package ) {
-			return null;
-		}
-
-		$out = array( 'version' => $version, 'package' => $package );
+		$out = array(
+			'version' => (string) $body['wersja'],
+			'package' => ssw_gc_api( 'wtyczka/' . basename( (string) $body['plik'] ) ),
+		);
 		set_site_transient( 'ssw_gc_latest', $out, 6 * HOUR_IN_SECONDS );
 		return $out;
 	}
@@ -105,11 +100,13 @@ add_filter(
 add_filter(
 	'http_request_args',
 	function ( $args, $url ) {
-		$token = ssw_gc_token();
-		if ( '' !== $token && 0 === strpos( (string) $url, 'https://api.github.com/repos/' . SSW_GC_REPO ) ) {
+		if ( 0 === strpos( (string) $url, 'https://api.github.com/repos/' . SSW_GC_REPO ) ) {
+			$token                            = ssw_gc_token();
 			$args['headers']                  = isset( $args['headers'] ) && is_array( $args['headers'] ) ? $args['headers'] : array();
-			$args['headers']['Authorization'] = 'Bearer ' . $token;
-			$args['headers']['Accept']        = 'application/octet-stream';
+			if ( '' !== $token ) {
+				$args['headers']['Authorization'] = 'Bearer ' . $token;
+			}
+			$args['headers']['Accept']        = 'application/vnd.github.raw';
 			$args['headers']['User-Agent']    = 'ssw-gry-coachingowe';
 		}
 		return $args;
