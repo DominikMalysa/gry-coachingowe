@@ -111,27 +111,34 @@ add_filter(
 
 		// „Sprawdź ponownie” w panelu ma pomijać zapamiętany wynik.
 		$latest = ssw_gc_latest( ! empty( $_GET['force-check'] ) );
-		if ( ! $latest ) {
-			return $transient;
-		}
-		if ( version_compare( $latest['version'], $here, '<=' ) ) {
-			return $transient;
-		}
 
-		if ( ! isset( $transient->response ) || ! is_array( $transient->response ) ) {
-			$transient->response = array();
-		}
-		$transient->response[ SSW_GC_PLUGIN_FILE ] = (object) array(
+		$item = (object) array(
 			'id'          => SSW_GC_REPO,
 			'slug'        => 'ssw-poznaj-siebie',
 			'plugin'      => SSW_GC_PLUGIN_FILE,
-			'new_version' => $latest['version'],
-			'package'     => $latest['package'],
+			'new_version' => $latest ? $latest['version'] : $here,
+			'package'     => $latest ? $latest['package'] : '',
 			'url'         => 'https://github.com/' . SSW_GC_REPO,
 			'tested'      => get_bloginfo( 'version' ),
 			'icons'       => array(),
 			'banners'     => array(),
 		);
+
+		if ( $latest && version_compare( $latest['version'], $here, '>' ) ) {
+			if ( ! isset( $transient->response ) || ! is_array( $transient->response ) ) {
+				$transient->response = array();
+			}
+			$transient->response[ SSW_GC_PLUGIN_FILE ] = $item;
+			return $transient;
+		}
+
+		// Wtyczka jest aktualna: wpis w no_update sprawia, że WordPress pokazuje przełącznik
+		// „Automatyczne aktualizacje” przy wtyczce na liście wtyczek.
+		$item->new_version = $here;
+		if ( ! isset( $transient->no_update ) || ! is_array( $transient->no_update ) ) {
+			$transient->no_update = array();
+		}
+		$transient->no_update[ SSW_GC_PLUGIN_FILE ] = $item;
 		return $transient;
 	}
 );
