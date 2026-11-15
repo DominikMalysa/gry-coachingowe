@@ -79,7 +79,9 @@ add_filter(
 		$data = get_file_data( SSW_GC_DIR . 'ssw-poznaj-siebie.php', array( 'Version' => 'Version' ) );
 		$here = isset( $data['Version'] ) ? $data['Version'] : '0';
 
-		$latest = ssw_gc_latest();
+		// „Sprawdź ponownie” w panelu ma pomijać zapamiętany wynik.
+		$force  = ! empty( $_GET['force-check'] );
+		$latest = ssw_gc_latest( $force );
 		if ( ! $latest || version_compare( $latest['version'], $here, '<=' ) ) {
 			return $transient;
 		}
