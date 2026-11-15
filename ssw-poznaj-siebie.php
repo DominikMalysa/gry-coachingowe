@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Świadome Słowa — Gry coachingowe
  * Description: Udostępnia zakładkę „Gry coachingowe” (strona główna i gry) pod adresem /gry-coachingowe/ jako aplikację do zainstalowania na telefonie i komputerze. Stare adresy /stereotyp/ i /poznaj-siebie-glebiej/ przekierowują do nowej lokalizacji. Wyłączenie wtyczki wyłącza te strony. Nie zmienia żadnych innych stron ani ustawień. Zastępuje wtyczkę „Stereotyp na warsztacie” (wyłącz ją przed włączeniem tej).
- * Version: 2.3.3
+ * Version: 2.3.4
  * Author: Dominik Małysa
  * Text Domain: ssw-poznaj-siebie
  */
