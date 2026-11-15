@@ -1,0 +1,592 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#F3BF69">
+<meta name="robots" content="noindex">
+<meta name="description" content="Gra o przekonaniach, które prowadzą nas za rękę. 13 stacji badania własnego stereotypu.">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Stereotyp">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<style>
+:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+body{margin:0}
+img{max-width:100%}
+[hidden]{display:none!important}
+</style>
+<title>Stereotyp na warsztacie</title>
+<style>@font-face{font-family:'Lora';font-style:normal;font-weight:500;font-display:swap;src:url(../fonts/lora-latin-500-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Lora';font-style:normal;font-weight:700;font-display:swap;src:url(../fonts/lora-latin-700-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Lora';font-style:italic;font-weight:500;font-display:swap;src:url(../fonts/lora-latin-500-italic.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Lora';font-style:normal;font-weight:500;font-display:swap;src:url(../fonts/lora-latin-ext-500-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Lora';font-style:normal;font-weight:700;font-display:swap;src:url(../fonts/lora-latin-ext-700-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Lora';font-style:italic;font-weight:500;font-display:swap;src:url(../fonts/lora-latin-ext-500-italic.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Source Sans 3';font-style:normal;font-weight:400;font-display:swap;src:url(../fonts/source-sans-3-latin-400-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Source Sans 3';font-style:normal;font-weight:600;font-display:swap;src:url(../fonts/source-sans-3-latin-600-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Source Sans 3';font-style:normal;font-weight:700;font-display:swap;src:url(../fonts/source-sans-3-latin-700-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Source Sans 3';font-style:normal;font-weight:400;font-display:swap;src:url(../fonts/source-sans-3-latin-ext-400-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Source Sans 3';font-style:normal;font-weight:600;font-display:swap;src:url(../fonts/source-sans-3-latin-ext-600-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Source Sans 3';font-style:normal;font-weight:700;font-display:swap;src:url(../fonts/source-sans-3-latin-ext-700-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Lato';font-style:normal;font-weight:400;font-display:swap;src:url(../fonts/lato-latin-400-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Lato';font-style:normal;font-weight:400;font-display:swap;src:url(../fonts/lato-latin-ext-400-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Lato';font-style:normal;font-weight:700;font-display:swap;src:url(../fonts/lato-latin-700-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Lato';font-style:normal;font-weight:700;font-display:swap;src:url(../fonts/lato-latin-ext-700-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Cinzel';font-style:normal;font-weight:700;font-display:swap;src:url(../fonts/cinzel-latin-700-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Cinzel';font-style:normal;font-weight:700;font-display:swap;src:url(../fonts/cinzel-latin-ext-700-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}</style>
+<style>
+/* Układ: jedna kolumna jak karta w grze; pasek faz u góry, karta stacji pośrodku, nawigacja przyklejona do dołu. */
+:root{
+  /* Styl 1: Marka (domyślny). Krem i biel jako powierzchnia pracy, brąz z logo, bursztyn jako akcent. */
+  --bg:#F8F1E3; --paper:#FFFDF8; --ink:#2C2620; --head:#5A2D12; --soft:#6B5442;
+  --gold:#D9A24E; --gold-soft:#E8C079; --line:#E0D3B8; --muted:#5C4A3A; --on-dark:#FFFDF8;
+  --f1:#4A6B8C; --f3:#B8763A; --pc:#5A2D12; --poc:#FFFDF8; --band:#F3BF69;
+  --serif:"Lato",Calibri,"Segoe UI",sans-serif; --sans:"Lato",Calibri,"Segoe UI",sans-serif; color-scheme:light;
+}
+/* Styl 2: Duży druk i wysoki kontrast (dostępność: większy tekst, białe tło, mocne ramki) */
+:root[data-skin="duzy"]{
+  --bg:#FFFFFF; --paper:#FFFFFF; --ink:#1A1410; --head:#3B1D0C; --soft:#3F3228;
+  --gold:#B8763A; --gold-soft:#E8C079; --line:#8F7B63; --muted:#43362B; --on-dark:#FFFFFF;
+  --f1:#3B5F80; --f3:#9A4F1B; --pc:#3B1D0C; --poc:#FFFFFF; --band:#FFFFFF;
+}
+*{box-sizing:border-box}
+html,body{min-height:100%}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.5;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));
+  padding-block:0 96px}
+.wrap{max-width:640px;margin:0 auto}
+header.top{padding-block:14px 8px}
+.brand{font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:var(--soft);font-weight:700}
+.dots{display:flex;gap:4px;margin-top:10px}
+.dots button{flex:1;height:26px;border:0;background:none;padding:0;position:relative;cursor:pointer;min-width:0}
+.dots button::before{content:"";position:absolute;left:0;right:0;top:9px;height:8px;border-radius:4px;background:var(--line)}
+.dots button.done::before{background:var(--c)} .dots button.cur::before{background:var(--c);outline:2px solid var(--ink);outline-offset:2px}
+.phase{display:flex;justify-content:space-between;font-size:14px;color:var(--muted);margin-top:6px}
+h1,h2,h3{font-family:var(--serif);color:var(--head);text-wrap:balance;margin:0}
+h1{font-size:34px;line-height:1.15} h2{font-size:26px;line-height:1.2} h3{font-size:19px;line-height:1.3}
+p{margin:0 0 10px}
+.lead{color:var(--muted);font-size:18px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:18px;margin-top:16px}
+.tag{display:inline-block;font-size:14px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--on-dark);background:var(--tb,var(--c,var(--soft)));border-radius:6px;padding:2px 9px}
+.task{border-left:3px solid var(--c,var(--gold));padding-left:12px;color:var(--ink);margin-top:12px}
+.q{display:flex;gap:12px;padding:12px 0;border-top:1px solid var(--line)}
+.q:first-of-type{border-top:0}
+.q b{flex:none;width:26px;height:26px;border-radius:50%;background:var(--tb,var(--c,var(--soft)));color:var(--on-dark);display:grid;place-items:center;font-size:14px}
+label.l{display:block;font-weight:700;font-size:14px;color:var(--head);margin:16px 0 6px}
+textarea,input[type=text],input[type=date],select{width:100%;font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--soft);border-radius:10px;padding:10px 12px}
+textarea{min-height:92px;resize:vertical}
+textarea:focus,input:focus,select:focus,button:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
+input[type=range]{width:100%;accent-color:var(--gold)}
+.range{display:flex;align-items:center;gap:12px}.range output{font-family:var(--serif);font-size:22px;color:var(--head);min-width:2.4ch;text-align:right;font-variant-numeric:tabular-nums}
+.btn{font:inherit;font-weight:700;border-radius:10px;border:1px solid var(--soft);background:transparent;color:var(--head);padding:10px 16px;cursor:pointer}
+.btn.pri{background:var(--head);color:var(--on-dark);border-color:var(--head)}
+.btn.sm{padding:10px 14px;font-size:15px}
+.btn.on{background:var(--head);color:var(--on-dark);border-color:var(--head)}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.chips .btn{font-weight:600;text-align:left}
+.special{background:var(--head);color:var(--on-dark);border-radius:14px;padding:18px;margin-top:14px}
+.special h3{color:var(--on-dark);font-size:15px;letter-spacing:.1em;text-transform:uppercase}
+.special p{font-size:18px;margin:8px 0 12px}
+.special .btn{color:var(--on-dark);border-color:var(--on-dark)}
+.nav{position:fixed;left:0;right:0;bottom:0;background:var(--bg);border-top:1px solid var(--line);
+  padding:10px max(16px,env(safe-area-inset-left,0px)) calc(10px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-right,0px));z-index:5}
+.nav .wrap{display:flex;gap:10px;justify-content:space-between}
+.nav .btn{flex:1}.nav .btn.back{flex:0 0 auto}
+.scale{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.pan{background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:10px;min-width:0}
+.pan h4{margin:0 0 6px;font-family:var(--serif);color:var(--head);font-size:16px}
+.pan ul{list-style:none;margin:0;padding:0}
+.pan li{display:flex;justify-content:space-between;gap:6px;padding:4px 0;font-size:15px;border-top:1px solid var(--line);overflow-wrap:anywhere}
+.pan li:first-child{border-top:0}
+.pan li button{border:0;background:none;color:var(--muted);cursor:pointer;font-size:18px;flex:none;padding:8px 12px;margin:-8px -8px -8px 0}
+.pan .heavy{font-size:14px;color:var(--muted);margin-top:6px}
+.bar{height:14px;border-radius:7px;background:var(--line);overflow:hidden;display:flex;margin-top:12px}
+.bar i{display:block;height:100%}
+.sum{display:flex;justify-content:space-between;font-weight:700;margin-top:6px;font-variant-numeric:tabular-nums}
+.verdict{margin-top:10px;padding:10px 12px;border-radius:10px;background:var(--bg);border:1px dashed var(--soft);font-size:15px}
+.add{display:grid;grid-template-columns:1fr 92px;gap:8px;margin-top:10px}
+.add .row{grid-column:1/-1}
+.sph{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
+.sph button{font:inherit;text-align:left;background:var(--bg);color:var(--ink);border:1px solid var(--line);border-radius:10px;padding:10px;cursor:pointer;display:flex;justify-content:space-between;gap:6px}
+.sph button span{font-size:14px;font-weight:700;color:var(--muted)}
+.sph button.p{border-color:var(--gold);box-shadow:inset 3px 0 0 var(--gold)}.sph button.p span{color:var(--head)}
+.sph button.m{border-color:var(--soft);box-shadow:inset 3px 0 0 var(--f3)}.sph button.m span{color:var(--head)}
+.rules{padding-left:20px}.rules li{margin-bottom:6px}
+.note{font-size:14px;color:var(--muted)}
+.hint{margin:2px 0 6px;font-size:14px;line-height:1.4}
+.old{font-family:var(--serif);font-style:italic;font-size:20px;color:var(--head)}
+.crit{border-top:1px solid var(--line);margin-top:14px;padding-top:4px}
+.pct{font-family:var(--serif);color:var(--head);margin-left:6px;font-variant-numeric:tabular-nums}
+.roles{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px}
+.roles div{background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:8px 10px;min-width:0;overflow-wrap:anywhere}
+.roles small{display:block;font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:700}
+.roles b{font-family:var(--serif);color:var(--head)}
+.pasrow{margin-top:14px}
+.passed{margin-top:10px;font-weight:700;color:var(--soft)}
+/* Karta Przebudowy */
+.kp{background:var(--paper);border:2px solid var(--gold);border-radius:16px;padding:20px;margin-top:16px;position:relative;box-shadow:inset 0 0 0 5px var(--paper),inset 0 0 0 6px var(--gold-soft)}
+.kp .kh{font-size:14px;letter-spacing:.16em;text-transform:uppercase;color:var(--soft);font-weight:700;text-align:center}
+.kp .pair{margin-top:12px}
+.kp .pair small{display:block;font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:700}
+.kp .new{font-family:var(--serif);font-size:22px;color:var(--head);line-height:1.3}
+.kp .str{display:grid;gap:6px;margin-top:6px}
+.kp .str div{display:grid;grid-template-columns:104px 1fr 44px;gap:8px;align-items:center;font-size:14px}
+.kp .str i{display:block;height:10px;border-radius:5px;background:var(--line);overflow:hidden}
+.kp .str i s{display:block;height:100%;background:var(--c);text-decoration:none}
+.kp .str span{text-align:right;font-variant-numeric:tabular-nums;font-weight:700}
+.kp hr{border:0;border-top:1px solid var(--line);margin:14px 0}
+.kp ul{margin:6px 0 0;padding-left:18px}
+.stamp{width:124px;height:124px;border-radius:50%;border:3px double var(--soft);color:var(--soft);display:grid;place-items:center;text-align:center;font-family:var(--serif);font-weight:700;font-size:14px;letter-spacing:.04em;transform:rotate(-12deg);margin:14px auto 0;line-height:1.3}
+.stamp small{display:block;font-family:var(--sans);font-weight:600;font-size:14px;letter-spacing:0}
+.sheet{white-space:pre-wrap;font-size:14px;background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:14px;overflow-wrap:anywhere}
+details summary{cursor:pointer;font-weight:700;color:var(--head);margin-top:14px}
+@media (max-width:420px){h1{font-size:29px}.roles{grid-template-columns:1fr}.kp .str div{grid-template-columns:86px 1fr 40px}}
+@media (prefers-reduced-motion:no-preference){.card,.special,.kp{animation:in .25s ease-out}@keyframes in{from{opacity:.0;transform:translateY(6px)}to{opacity:1;transform:none}}}
+
+/* Czytelność i radość: większy tekst, białe karty, kolorowe przyciski */
+body{font-size:18px}
+.card{border-radius:18px;box-shadow:0 2px 10px rgba(30,30,60,.07)}
+.btn{border-radius:14px}
+.nav .btn{padding:13px 16px;font-size:18px}
+.tag{border-radius:999px;padding:3px 12px;color:var(--oc,var(--on-dark))}
+.q b{color:var(--oc,var(--on-dark))}
+.dots button::before{top:8px;height:10px;border-radius:5px}
+.btn.pri,.btn.on{background:var(--pc);border-color:var(--pc);color:var(--poc)}
+.special{background:var(--head)}
+.skins{display:flex;gap:6px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.sw{display:flex;gap:4px;align-items:center;font-size:14px;color:var(--muted)}
+.sw span{display:none}
+.sw button{font:inherit;font-size:14px;font-weight:700;border:1px solid var(--line);background:var(--paper);color:var(--head);border-radius:999px;padding:10px 14px;cursor:pointer}
+.sw button[aria-pressed="true"]{background:var(--head);color:var(--on-dark);border-color:var(--head)}
+.tools .tbtn{padding:10px 14px}
+.tools .tbtn .lbl{display:none}
+@media (min-width:480px){.tools .tbtn .lbl{display:inline}}
+
+/* Marka, narzędzia u góry, udostępnianie, podpowiedzi zwinięte */
+.toprow{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.logo{display:flex;align-items:center;gap:8px;text-decoration:none;color:var(--soft);min-width:0}
+.logo img{height:34px;width:auto;display:block}
+.logo .alt{display:none;font-family:var(--serif);font-weight:700;color:var(--head);font-size:17px}
+.logo.noimg img{display:none}.logo.noimg .alt{display:inline}
+.logo .cap{font-size:14px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:var(--soft);line-height:1.2}
+.tools{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:8px}
+.tools .grp2{display:flex;gap:6px;align-items:center}
+.tbtn{font:inherit;font-size:14px;font-weight:700;border:1px solid var(--line);background:var(--paper);color:var(--head);border-radius:999px;padding:5px 12px;cursor:pointer;display:inline-flex;gap:6px;align-items:center}
+.tbtn:disabled{opacity:.4;cursor:not-allowed}
+.tbtn.share{background:var(--pc);border-color:var(--pc);color:var(--poc)}
+.tbtn svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.grp{border:1px solid var(--line);border-radius:12px;margin-top:10px;background:var(--bg)}
+.grp>summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:8px;padding:12px 14px;font-family:var(--serif);font-weight:700;color:var(--head);font-size:16px;margin:0}
+.grp>summary::-webkit-details-marker{display:none}
+.grp>summary::after{content:"";width:9px;height:9px;border-right:2px solid var(--soft);border-bottom:2px solid var(--soft);transform:rotate(45deg);transition:transform .15s;flex:none;margin-right:2px}
+.grp[open]>summary::after{transform:rotate(225deg)}
+.grp .cnt{font-family:var(--sans);font-size:14px;font-weight:700;color:var(--muted);margin-left:auto;margin-right:8px}
+.grp .chips{padding:0 12px 12px;margin-top:0}
+.ov{position:fixed;inset:0;background:rgba(20,25,45,.45);z-index:20;display:flex;align-items:flex-end;justify-content:center;padding:0}
+.ov .sheetbox{background:var(--paper);width:100%;max-width:640px;border-radius:20px 20px 0 0;padding:18px 18px calc(18px + env(safe-area-inset-bottom,0px));max-height:90vh;overflow:auto}
+@media (min-width:700px){.ov{align-items:center}.ov .sheetbox{border-radius:20px}}
+.ov h3{margin-bottom:6px}
+.ov textarea{min-height:120px;font-size:16px}
+.sbtns{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:12px}
+.sbtns .btn{display:block;text-align:center;text-decoration:none}
+.brandfoot{text-align:center;color:var(--muted);font-size:14px;margin:26px 0 8px}
+.brandfoot a{color:var(--head);font-weight:700}
+
+/* v9: styl Marka: pas bursztynowy z logo, nagłówek główny krojem Cinzel (zamiennik Trajan) */
+html{overflow-x:clip}
+.toprow{position:relative}
+.toprow::before{content:"";position:absolute;z-index:-1;top:-14px;bottom:-10px;left:calc(50% - 50vw);right:calc(50% - 50vw);background:var(--band)}
+:root:not([data-skin="duzy"]) h1{font-family:"Cinzel","Lato",serif;font-weight:700;letter-spacing:.01em}
+header.top{padding-block:14px 8px}
+.toprow .logo img{height:40px}
+.tools .grp2{margin-left:auto}
+.sw{flex-wrap:wrap}
+/* Duży druk */
+:root[data-skin="duzy"] body{font-size:21px;line-height:1.55}
+:root[data-skin="duzy"] .lead{font-size:22px}
+:root[data-skin="duzy"] h1{font-size:36px}:root[data-skin="duzy"] h2{font-size:30px}:root[data-skin="duzy"] h3{font-size:24px}
+:root[data-skin="duzy"] .note,:root[data-skin="duzy"] .hint,:root[data-skin="duzy"] .phase,:root[data-skin="duzy"] .tag,:root[data-skin="duzy"] label.l,:root[data-skin="duzy"] .sw button,:root[data-skin="duzy"] .tbtn,:root[data-skin="duzy"] .roles small,:root[data-skin="duzy"] .kp .kh,:root[data-skin="duzy"] .kp small,:root[data-skin="duzy"] .brandfoot,:root[data-skin="duzy"] .pan .heavy,:root[data-skin="duzy"] .sph button span,:root[data-skin="duzy"] .grp .cnt{font-size:16px}
+:root[data-skin="duzy"] .btn{padding:14px 18px;font-size:20px;min-height:52px}
+:root[data-skin="duzy"] .btn.sm{font-size:19px;padding:12px 16px}
+:root[data-skin="duzy"] .nav .btn{padding:16px 18px;font-size:21px;min-height:58px}
+:root[data-skin="duzy"] .card{border:2px solid var(--line);box-shadow:none}
+:root[data-skin="duzy"] textarea,:root[data-skin="duzy"] input[type=text],:root[data-skin="duzy"] select{font-size:20px;border-width:2px;border-color:var(--ink)}
+:root[data-skin="duzy"] .pan li,:root[data-skin="duzy"] .verdict,:root[data-skin="duzy"] .sheet,:root[data-skin="duzy"] .kp .str div{font-size:18px}
+:root[data-skin="duzy"] .dots button{height:32px}
+:root[data-skin="duzy"] .toprow .logo img{height:44px}
+:root[data-skin="duzy"] .toprow{border-bottom:2px solid var(--line);padding-bottom:10px}
+
+.stamp{width:150px;height:150px}
+:root[data-skin="duzy"] .q b{font-size:16px;width:34px;height:34px}
+:root[data-skin="duzy"] .kp .str div{grid-template-columns:1fr 60px;row-gap:2px}
+:root[data-skin="duzy"] .kp .str div>:first-child{grid-column:1/-1}
+:root[data-skin="duzy"] .kp .str div>i{grid-column:1}
+:root[data-skin="duzy"] .kp .pair small,:root[data-skin="duzy"] .kp .kh,:root[data-skin="duzy"] .kp small{font-size:16px!important}
+
+input[type=range]{height:40px}
+.homelink{color:var(--head);font-weight:700;font-size:15px;text-underline-offset:3px}
+:root[data-skin="duzy"] input[type=range]{height:48px}
+:root[data-skin="duzy"] .stamp{width:176px;height:176px;font-size:16px}
+:root[data-skin="duzy"] .stamp small{font-size:16px}
+</style>
+<div class="wrap">
+  <header class="top">
+    <div class="toprow"><a class="logo" id="logo" href="../" aria-label="Gry coachingowe: strona główna"><img src="../logo.png" alt="Świadome Słowa" height="34"><span class="alt">Świadome Słowa</span></a>
+      <button type="button" class="tbtn share" id="share" aria-label="Udostępnij grę"><svg viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>Udostępnij</button></div>
+    <div class="tools"><div class="sw" id="skins" role="group" aria-label="Wygląd gry"></div>
+      <div class="grp2"><button type="button" class="tbtn" id="undo" aria-label="Cofnij ostatni krok" title="Cofnij ostatni krok"><svg viewBox="0 0 24 24"><path d="M9 14L4 9l5-5"/><path d="M4 9h10a6 6 0 010 12h-3"/></svg><span class="lbl">Cofnij</span></button><button type="button" class="tbtn" id="redo" aria-label="Ponów cofnięty krok" title="Ponów"><svg viewBox="0 0 24 24"><path d="M15 14l5-5-5-5"/><path d="M20 9H10a6 6 0 000 12h3"/></svg><span class="lbl">Ponów</span></button></div></div>
+    <div class="dots" id="dots" hidden></div>
+    <div class="phase" id="phase" hidden></div>
+  </header>
+  <main id="app"></main>
+</div>
+<div class="nav" id="nav" hidden><div class="wrap"><button class="btn back" id="back">Wstecz</button><button class="btn pri" id="next">Dalej</button></div></div>
+<script>
+const D = {"title": "Stereotyp na warsztacie", "subtitle": "Gra o przekonaniach, które prowadzą nas za rękę", "fazy": [{"id": "korzenie", "nazwa": "KORZENIE", "opis": "Skąd to się wzięło?", "kolor": "#8B5A35"}, {"id": "funkcja", "nazwa": "TARCZA", "opis": "Po co to jest?", "kolor": "#C8943C"}, {"id": "waga", "nazwa": "WAGA", "opis": "Ile to kosztuje, a ile daje?", "kolor": "#5C3317"}, {"id": "siec", "nazwa": "SIEĆ", "opis": "Na co to wpływa?", "kolor": "#B89968"}, {"id": "lekcja", "nazwa": "LEKCJA", "opis": "Czego mnie uczy i co dalej?", "kolor": "#3A2316"}], "stacje": [{"nr": 1, "faza": "korzenie", "nazwa": "Nazwij to", "cel": "Wypowiedz stereotyp jednym zdaniem i zmierz, jak mocno w niego wierzysz.", "zadanie": "Zapisz stereotyp w formie „Ludzie tacy jak… są/robią…” albo „Zawsze/nigdy…”. Oceń siłę przekonania w trzech kryteriach (pewność, automatyzm, wpływ), każde w skali 0–10.", "pytania": ["Jak brzmi ten stereotyp w jednym zdaniu, tak jak brzmi w Twojej głowie?", "W jakim tonie go słyszysz: jako fakt, ostrzeżenie, żart czy wyrok?", "Na ile procent jesteś pewien(-na), że to prawda? Skąd ta liczba?", "Co czujesz w ciele, kiedy wypowiadasz to zdanie na głos?", "W jakich sytuacjach uruchamia się najszybciej?", "Jakim słowem lub obrazem najkrócej go opiszesz?"]}, {"nr": 2, "faza": "korzenie", "nazwa": "Pierwszy raz", "cel": "Znajdź moment, w którym ten stereotyp zagościł w Twojej głowie.", "zadanie": "Wskaż wiek, miejsce i sytuację pierwszego spotkania ze stereotypem. Jeśli nie pamiętasz — wskaż najwcześniejszy ślad.", "pytania": ["Ile miałeś(-aś) lat, kiedy pierwszy raz usłyszałeś(-aś) coś takiego?", "Gdzie wtedy byłeś(-aś) i co się działo wokół?", "Jakie emocje towarzyszyły temu momentowi?", "Czy to było powiedziane wprost, czy „wyczytane” z zachowania innych?", "Co wtedy z tego wyniosłeś(-łaś) jako zasadę dla siebie?", "Jeśli nie pamiętasz początku — kiedy najwcześniej zauważasz go u siebie?"]}, {"nr": 3, "faza": "korzenie", "nazwa": "Kto mi to dał", "cel": "Nazwij nośniki: osoby, miejsca i media, przez które stereotyp do Ciebie dotarł.", "zadanie": "Wypisz 3–5 źródeł (rodzina, szkoła, grupa rówieśnicza, media, religia, praca). Przy każdym zaznacz, czy podał go wprost, czy przez przykład.", "pytania": ["Kto w Twoim życiu powtarzał to zdanie lub coś bardzo podobnego?", "Czy ktoś uczył Cię tego własnym zachowaniem, bez słów?", "Co mówiły o tym szkoła, media i grupa rówieśnicza?", "Kto w Twoim życiu myślał inaczej i jak to wyglądało?", "Co ci ludzie zyskiwali, przekazując Ci ten stereotyp?", "Komu Ty go przekazujesz dalej — świadomie lub nie?"]}, {"nr": 4, "faza": "korzenie", "nazwa": "Głos pokoleń", "cel": "Sięgnij o pokolenie lub dwa wstecz: skąd mieli to osoby, które Ci to przekazały?", "zadanie": "Opisz, w jakich warunkach żyli rodzice i dziadkowie (czasy, bieda, wojna, system, migracje) i do czego ten stereotyp był im potrzebny.", "pytania": ["W jakich czasach i warunkach dorastała osoba, która przekazała Ci to przekonanie?", "Czego bała się lub czego jej brakowało, kiedy to zdanie mogło się narodzić?", "Jaka historia rodziny stoi za tym zdaniem? Co o niej wiesz, a czego się domyślasz?", "Co powiedziałaby ta osoba, gdybyś zapytał(-a) ją: „Dlaczego tak uważasz?”", "Przed jaką stratą lub krzywdą przodków mogło to przekonanie próbować chronić?", "Co z tego dziedzictwa chcesz zachować, a co oddać z szacunkiem i odłożyć?"]}, {"nr": 5, "faza": "korzenie", "nazwa": "Początek historii", "cel": "Dotrzyj do historycznych i społecznych korzeni: kiedy i po co taki stereotyp w ogóle powstał.", "zadanie": "Zbadaj (razem z grupą lub w źródłach), jaki kontekst społeczny, ekonomiczny lub historyczny go wytworzył. Jeśli brak wiedzy — zapisz hipotezy i oznacz je jako hipotezy.", "pytania": ["W jakich warunkach społecznych lub historycznych takie zdanie mogło być użyteczne?", "Komu to przekonanie dawało przewagę lub poczucie bezpieczeństwa?", "Jakie zagrożenie (realne lub wyobrażone) próbowało oswoić?", "Czy w innych kulturach lub epokach ludzie myśleli o tym inaczej?", "Co w tamtych czasach było prawdą, a co stało się tylko nawykiem myślenia?", "Co się zmieniło od tamtej pory na świecie, w kraju, w Twojej rodzinie?"]}, {"nr": 6, "faza": "funkcja", "nazwa": "Tarcza", "cel": "Odkryj, przed czym ten stereotyp Cię chroni i jaką potrzebę zabezpiecza.", "zadanie": "Dokończ: „Ten stereotyp chroni mnie przed…”. Nazwij potrzebę pod spodem (bezpieczeństwo, przynależność, szacunek, kontrola, wolność).", "pytania": ["Przed czym ten stereotyp Cię chroni? Dokończ: „Dzięki niemu nie muszę…”", "Jaką potrzebę zaspokaja: bezpieczeństwo, przynależność, kontrolę, uznanie?", "Jakie rozczarowanie lub ból omija dzięki niemu Twoja głowa?", "Co by się stało, gdybyś jutro przestał(-a) w to wierzyć?", "Jak ochraniał Cię ten schemat w przeszłości? Za co mu dziękujesz?", "Jakiej decyzji ta tarcza Ci oszczędza?"]}, {"nr": 7, "faza": "funkcja", "nazwa": "Czy nadal aktualne", "cel": "Sprawdź, czy zagrożenie, przed którym tarcza chroni, jest nadal prawdziwe.", "zadanie": "Oceń (0–10), jak realne jest dziś zagrożenie. Zapisz 2 dowody „za” i 2 kontrprzykłady „przeciw”.", "pytania": ["Czy to, przed czym Cię chroni, wciąż Ci grozi? Na ile realnie (0–10)?", "Jaki masz dziś zasób (wiedzę, ludzi, pieniądze, dorosłość), którego nie miałeś(-aś) wtedy?", "Wskaż konkretną osobę lub sytuację, która temu stereotypowi przeczy.", "Ile razy w ostatnim roku się sprawdził, a ile razy nie?", "Czy dziś tarczą musi być stereotyp, czy mógłby nią być inny sposób?", "Co w tej tarczy jest dziś rzeczywistą ochroną, a co tylko przyzwyczajeniem?"]}, {"nr": 8, "faza": "waga", "nazwa": "Na wagę", "cel": "Połóż na szalach: w czym Ci to służy, a w czym kosztuje.", "zadanie": "Wypisz argumenty na każdą szalę i nadaj każdemu ciężar 1–10. Jeden mocny argument może ważyć więcej niż kilka słabych, więc zwróć uwagę nie tylko na sumę, ale i na najcięższy argument. Nie spiesz się z wnioskiem: waga ma pokazać obraz, nie wydać wyrok.", "pytania": ["W czym konkretnie ten stereotyp Ci pomaga? Podaj trzy przykłady.", "Co przez niego tracisz: relacje, szanse, spokój, pieniądze, zdrowie?", "Które pozycje po obu stronach są najcięższe i dlaczego?", "Co z tej wagi dotyczy tylko Ciebie, a co też innych?", "Gdyby ktoś bliski miał ten sam układ szal, co byś mu powiedział(-a)?", "Co Cię zaskoczyło po zsumowaniu?"]}, {"nr": 9, "faza": "waga", "nazwa": "Przebuduj", "cel": "Zdefiniuj stereotyp na nowo tak, by zachować jego dobre strony, a zdjąć koszty.", "zadanie": "Napisz nowe zdanie, które zachowuje wartość ze starego i dodaje elastyczności: „Czasem… , a ja mogę…”, „Zwykle… , ale wyjątki…”. Sprawdź, czy brzmi prawdziwie.", "pytania": ["Co w starym zdaniu zostawiasz, bo jest prawdą lub wartością?", "Które słowa („zawsze”, „nigdy”, „wszyscy”) zamieniasz na bardziej precyzyjne?", "Jak brzmi nowa wersja, która nadal Cię chroni, ale już mniej ogranicza?", "Jak wyglądałby Twój dzień, gdybyś żył(-a) według nowego zdania?", "Co w nowej wersji jest dla Ciebie nadal trudne do uwierzenia?", "Kto mógłby sprawdzić z Tobą, czy nowe zdanie jest uczciwe?"]}, {"nr": 10, "faza": "siec", "nazwa": "Inne sfery życia", "cel": "Zobacz, jak stereotyp wpływa na pozostałe obszary życia i na inne Twoje przekonania.", "zadanie": "Przejdź przez sfery: zdrowie, relacje, praca, pieniądze, rodzina, rozwój, wolny czas, duchowość. Przy każdej wpisz „pomaga / przeszkadza / neutralne”. Zaznacz inne przekonania, z którymi się łączy.", "pytania": ["W której sferze życia ten stereotyp działa najsilniej?", "W jakiej sferze zaskakująco Ci pomaga, a w jakiej przeszkadza?", "Z jakimi innymi Twoimi przekonaniami tworzy parę lub układ?", "Które z nich go wzmacniają, a które z nim się kłócą?", "Jeśli zmienisz go w jednym miejscu, co poruszy się w innych?", "Jaka sfera życia najbardziej na tym skorzysta?"]}, {"nr": 11, "faza": "siec", "nazwa": "Otoczenie", "cel": "Sprawdź wpływ stereotypu na bliskich i zbadaj, co wróci do Ciebie, jeśli zwiększysz jego pozytywny wpływ.", "zadanie": "Wypisz osoby, na które to przekonanie wpływa, i jak (plus / minus). Potem zapytaj: co by się stało, gdyby plusów było więcej? Jak wróciłoby to do Ciebie?", "pytania": ["Kogo i w jaki sposób dotyka to przekonanie w Twoim zachowaniu?", "Co z tego wpływu jest dobre dla innych, a co im szkodzi?", "Jak reagują na to ludzie, kiedy to widzą lub czują?", "Co zmieniłoby się w otoczeniu, gdybyś zwiększył(-a) pozytywny wpływ tego schematu?", "Jak ta zmiana wróciłaby do Ciebie: w relacjach, spokoju, szacunku, dobrostanie?", "Czy nowe zdanie byłoby lepsze dla Ciebie i dla innych jednocześnie?"]}, {"nr": 12, "faza": "lekcja", "nazwa": "Nauczyciel i ślepa plamka", "cel": "Zapytaj, czego ten stereotyp chce Cię nauczyć i gdzie zabiera Ci myślenie.", "zadanie": "Dokończ dwa zdania: „Ten stereotyp uczy mnie…” oraz „Przez ten stereotyp nie widzę/nie pytam o…”.", "pytania": ["Jaką mądrość życiową kryje w sobie ta skrótowa myśl?", "Czego nie widzisz, kiedy patrzysz przez ten filtr?", "Jakich pytań sobie nie zadajesz, bo „i tak wiadomo”?", "Jakie wyjątki od reguły pomijasz?", "Kogo lub co przez niego oceniasz zbyt szybko?", "Co by się zmieniło, gdybyś zaczął(-ęła) badać zamiast zakładać?"]}, {"nr": 13, "faza": "lekcja", "nazwa": "Eksperyment 7 dni", "cel": "Zamień wnioski w małe, bezpieczne działanie i ponownie zmierz przekonanie.", "zadanie": "Zaplanuj jeden eksperyment na 7 dni (co, kiedy, z kim), wskaż osobę, która o niego zapyta, i zmierz siłę starego i nowego zdania w tych samych trzech kryteriach (0–10).", "pytania": ["Jaki jeden mały krok sprawdzi nowe zdanie w praktyce w ciągu tygodnia?", "Co będzie sygnałem, że stary schemat się włączył?", "Kto zapyta Cię za tydzień, jak poszło?", "Na ile procent wierzysz teraz w stare, a na ile w nowe zdanie?", "Co chcesz zachować z tej rozmowy na pamiątkę?", "Jak podziękujesz swojemu stereotypowi na koniec?"]}], "karty": [{"typ": "Adwokat diabła", "tekst": "Broń stereotypu przez 60 sekund najlepiej, jak potrafisz. Potem powiedz, co w tej obronie jest prawdziwe."}, {"typ": "Adwokat diabła", "tekst": "Powiedz, kiedy ten stereotyp się sprawdził. Opisz dokładnie jedną sytuację."}, {"typ": "Adwokat diabła", "tekst": "Wyobraź sobie, że jesteś prokuratorem stereotypu. Wymień trzy zarzuty. Potem sam(-a) go obroń."}, {"typ": "Adwokat diabła", "tekst": "Co powiedziałby największy zwolennik tego stereotypu na Twoją przebudowę?"}, {"typ": "Adwokat diabła", "tekst": "Kto na świecie straciłby, gdyby ten stereotyp przestał działać? Dlaczego?"}, {"typ": "Adwokat diabła", "tekst": "Podaj najmocniejszy argument, dla którego nie warto niczego zmieniać."}, {"typ": "Zmiana perspektywy", "tekst": "Jak opisałaby ten stereotyp osoba, której on dotyczy? Użyj jej słów, nie swoich."}, {"typ": "Zmiana perspektywy", "tekst": "Co powiedziałoby Twoje dziecko lub dziecko z Twojej rodziny, słysząc Twoje zdanie?"}, {"typ": "Zmiana perspektywy", "tekst": "Spójrz z lotu ptaka za 20 lat. Jak ocenisz ten stereotyp wtedy?"}, {"typ": "Zmiana perspektywy", "tekst": "Jak opisałby go zaprzyjaźniony cudzoziemiec, który widzi to po raz pierwszy?"}, {"typ": "Zmiana perspektywy", "tekst": "Czyj głos jest nieobecny w Twojej historii o tym stereotypie? Wypowiedz go."}, {"typ": "Zmiana perspektywy", "tekst": "Co powiedziałbyś(-abyś) o tym stereotypie ukochanej osobie, która właśnie w niego uwierzyła?"}, {"typ": "Test faktów", "tekst": "Wymień trzy osoby, które temu stereotypowi przeczą. Co je łączy?"}, {"typ": "Test faktów", "tekst": "Jakie dane, badania lub wiarygodne źródła mógłbyś(-abyś) sprawdzić? Co byś znalazł(-a) „na nie”?"}, {"typ": "Test faktów", "tekst": "Podaj sytuację, w której zadziałał odwrotnie niż zakładasz."}, {"typ": "Test faktów", "tekst": "Jak sprawdziłbyś(-abyś) go w praktyce, żeby nikogo nie skrzywdzić?"}, {"typ": "Test faktów", "tekst": "Który fragment zdania jest faktem, a który interpretacją? Rozdziel je."}, {"typ": "Test faktów", "tekst": "Ile osób musiałoby temu przeczyć, żebyś przestał(-a) uważać to za regułę?"}, {"typ": "Pas", "tekst": "Karta ochronna: możesz ją zagrać zawsze, gdy temat jest zbyt trudny. Odpuszczasz pytanie bez tłumaczenia się."}, {"typ": "Pas", "tekst": "Karta ochronna: poproś o 2 minuty ciszy. Nikt nie zadaje pytań."}, {"typ": "Dar", "tekst": "Powiedz jednej osobie przy stole, co zobaczyłeś(-aś) w jej historii wartościowego."}, {"typ": "Dar", "tekst": "Dziękujesz swojemu stereotypowi za jedną rzecz, którą Ci dał. Powiedz jakie to jest uczucie."}], "stereotypy": {"O mnie i moim życiu": ["Nie wolno pokazywać słabości.", "Trzeba ciężko pracować, żeby zasłużyć na odpoczynek.", "Prawdziwi mężczyźni nie płaczą.", "Dobra matka zawsze się poświęca.", "Pieniądze psują ludzi.", "Nie wypada mówić o pieniądzach.", "Na ludzi nie można liczyć.", "Jak pytam o pomoc, to jestem ciężarem.", "Bez dyplomu nie ma szans.", "W moim wieku jest już za późno.", "Artyści nie umieją zarabiać.", "Rodzina jest ważniejsza od wszystkiego."], "O pracy i pieniądzach": ["Szef to wróg.", "Przedsiębiorcy oszukują.", "Pracownicy są leniwi.", "Etat daje bezpieczeństwo, własna firma ryzyko.", "Kto dużo zarabia, ten się sprzedał.", "Kobieta w zarządzie musi być twarda.", "Młodzi nie chcą pracować.", "Starsi nie ogarniają technologii.", "W handlu wszyscy kombinują.", "Sprzedawać to znaczy naciągać."], "O ludziach i grupach (uwaga: mówimy o sobie)": ["Ludzie z dużych miast są zimni.", "Ludzie ze wsi są prostsi.", "Obcokrajowcy nie rozumieją naszej kultury.", "Teściowa zawsze się wtrąca.", "Nastolatki są nieodpowiedzialne.", "Psycholodzy i coachowie to szarlatani.", "Informatycy nie umieją rozmawiać z ludźmi.", "Introwertycy nie nadają się na liderów."]}, "sfery": ["Zdrowie", "Relacje", "Praca", "Pieniądze", "Rodzina", "Rozwój", "Wolny czas", "Duchowość"], "zasady": ["Mówimy o sobie, nie o „tamtych ludziach”. Stereotyp badamy w swojej głowie, nie w cudzej.", "Nikogo nie oceniamy i nie poprawiamy. Pytamy, słuchamy, odbijamy. Po Pasie nie dopytujemy.", "To, co usłyszane przy stole, zostaje przy stole.", "Każdy ma jeden Pas na całą grę (kolejne dają karty Pas) i zagrywa go bez tłumaczenia się.", "Nie wybieramy stereotypów, które dotyczą kogoś przy stole. Zaczynamy od własnych.", "Granica gry: to nie terapia. Gdy emocje są bardzo silne, zatrzymujemy grę i prosimy o wsparcie specjalisty. Pomoc w kryzysie: 116 123 (wsparcie emocjonalne dla dorosłych), 112 (zagrożenie życia)."]};
+const KEY = "ssw-stereotyp-v2";
+const $ = (s) => document.querySelector(s);
+const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const PAL = { marka: ["#4A6B8C", "#B8763A", "#8A5524", "#1E3458", "#A07A3A"], duzy: ["#3B5F80", "#9A4F1B", "#6B3A12", "#1E3458", "#6E5A1E"] };
+const SKINS = [["marka", "Marka"], ["duzy", "Duży druk"]];
+const TC = { marka: "#F3BF69", duzy: "#FFFFFF" };
+const lum = (h) => { const n = parseInt(h.slice(1), 16), f = (c) => { c /= 255; return c <= 0.03928 ? c / 12.92 : Math.pow((c + 0.055) / 1.055, 2.4); }; return 0.2126 * f(n >> 16) + 0.7152 * f((n >> 8) & 255) + 0.0722 * f(n & 255); };
+const crt = (a, b) => { const x = lum(a), y = lum(b); return (Math.max(x, y) + 0.05) / (Math.min(x, y) + 0.05); };
+const onCol = (h) => crt(h, "#0E1627") >= crt(h, "#FFFFFF") ? "#0E1627" : "#FFFFFF";
+const mix = (h, t, k) => { const n = parseInt(h.slice(1), 16), c = [n >> 16, (n >> 8) & 255, n & 255].map((v) => Math.round(v + (t - v) * k)); return "#" + c.map((v) => v.toString(16).padStart(2, "0")).join(""); };
+const tagBg = (h) => { const wh = crt(h, "#FFFFFF") > crt(h, "#0E1627"), t = wh ? 0 : 255; let c = h; for (let k = 0.05; crt(c, wh ? "#FFFFFF" : "#0E1627") < 4.5 && k < 1; k += 0.05) c = mix(h, t, k); return c; };
+const faza = (id) => { const i = D.fazy.findIndex((f) => f.id === id); const pal = PAL[(typeof S !== "undefined" && S.skin) || "marka"] || PAL.marka; return Object.assign({}, D.fazy[i], { kolor: pal[i], tb: tagBg(pal[i]), oc: onCol(tagBg(pal[i])) }); };
+const SPECIAL_AT = [3, 6, 9, 12];
+const fresh = () => ({ skin: "marka", step: 0, stereo: "", mode: "solo", players: [], hero: 0,
+  k0: { p: 6, a: 6, w: 6 }, k1: null, k2: { p: 5, a: 5, w: 5 }, pas: {}, stamp: "",
+  a: {}, qp: {}, sp: {}, waga: { p: [], m: [] }, sfery: {}, x: {} });
+
+// Kryteria siły przekonania: każde 0–10, wynik = średnia × 10 (%)
+const KR = [["p", "Pewność", "Na ile jestem pewien(-na), że to prawda?"],
+            ["a", "Automatyzm", "Jak często włącza się samo, zanim zdążę pomyśleć?"],
+            ["w", "Wpływ", "Jak mocno wpływa na moje decyzje i zachowanie?"]];
+const str = (k) => Math.round((k.p + k.a + k.w) / 3 * 10);
+
+let S = fresh();
+try { const raw = localStorage.getItem(KEY); if (raw) S = Object.assign(S, JSON.parse(raw)); } catch (e) {}
+const H = { u: [], r: [], last: null, t: null };
+const snap = () => { const o = JSON.parse(JSON.stringify(S)); delete o.skin; return JSON.stringify(o); };
+function commit() { clearTimeout(H.t); const cur = snap(); if (H.last === null) { H.last = cur; return; }
+  if (cur !== H.last) { H.u.push(H.last); if (H.u.length > 100) H.u.shift(); H.r = []; H.last = cur; histUI(); } }
+function histUI() { const u = $("#undo"), r = $("#redo"); if (u) u.disabled = !H.u.length && snap() === H.last; if (r) r.disabled = !H.r.length; }
+const save = () => { try { localStorage.setItem(KEY, JSON.stringify(S)); } catch (e) {} clearTimeout(H.t); H.t = setTimeout(() => { commit(); }, 600); histUI(); };
+function restore(js) { const keep = S.skin; S = Object.assign(fresh(), JSON.parse(js)); S.skin = keep; H.last = js; try { localStorage.setItem(KEY, JSON.stringify(S)); } catch (e) {} render(); histUI(); }
+function undo() { commit(); if (!H.u.length) return; H.r.push(H.last); restore(H.u.pop()); }
+function redo() { if (!H.r.length) return; H.u.push(H.last); restore(H.r.pop()); }
+function shareUrl() { const l = location; return /swiadomeslowa\.pl$/.test(l.hostname) ? "https://swiadomeslowa.pl/stereotyp/" : l.protocol === "file:" ? l.href : l.origin + l.pathname; }
+function shareText() { return "Zapraszam do przetestowania gry „Stereotyp na warsztacie” (Świadome Słowa). Otwórz w telefonie lub na komputerze. Gra w grupie działa na jednym wspólnym ekranie. Nic nie trzeba instalować ani zakładać konta, a Twoje odpowiedzi zostają tylko u Ciebie. Po grze napisz mi, co było niejasne albo co Ci się podobało:\n" + shareUrl(); }
+function openShare() {
+  const old = $("#ov"); if (old) old.remove();
+  const o = document.createElement("div"); o.className = "ov"; o.id = "ov";
+  const t = shareText(), enc = encodeURIComponent;
+  o.innerHTML = "<div class='sheetbox' role='dialog' aria-modal='true' aria-label='Udostępnij grę'><h3>Wyślij grę do testowania</h3><p class='note'>Możesz zmienić treść wiadomości przed wysłaniem.</p>" +
+    "<textarea id='smsg'>" + esc(t) + "</textarea><div class='sbtns'>" +
+    (navigator.share ? "<button class='btn pri' id='snative'>Wyślij przez telefon…</button>" : "") +
+    "<a class='btn' id='swa' target='_blank' rel='noopener'>WhatsApp</a><a class='btn' id='ssms'>SMS</a><a class='btn' id='smail'>E-mail</a>" +
+    "<button class='btn' id='scopy'>Kopiuj wiadomość</button><button class='btn' id='sclose'>Zamknij</button></div><p class='note' id='sinfo' style='margin-top:10px'></p></div>";
+  document.body.appendChild(o);
+  const ta = $("#smsg"), upd = () => { const v = ta.value; $("#swa").href = "https://wa.me/?text=" + enc(v); $("#ssms").href = "sms:?&body=" + enc(v); $("#smail").href = "mailto:?subject=" + enc("Zaproszenie do testowania: Stereotyp na warsztacie") + "&body=" + enc(v); };
+  upd(); ta.oninput = upd;
+  const close = () => o.remove(); $("#sclose").onclick = close; o.onclick = (e) => { if (e.target === o) close(); };
+  document.addEventListener("keydown", function esc1(e) { if (e.key === "Escape") { close(); document.removeEventListener("keydown", esc1); } });
+  $("#scopy").onclick = async () => { try { await navigator.clipboard.writeText(ta.value); $("#sinfo").textContent = "Skopiowano. Wklej w wiadomości."; } catch (e) { ta.select(); $("#sinfo").textContent = "Zaznaczono tekst. Skopiuj go ręcznie."; } };
+  const sn = $("#snative"); if (sn) sn.onclick = async () => { try { await navigator.share({ title: "Stereotyp na warsztacie", text: ta.value.replace(shareUrl(), "").trim(), url: shareUrl() }); } catch (e) {} };
+}
+
+const group = () => S.mode === "grupa" && S.players.length >= 2;
+function roles(n) {
+  if (!group()) return null;
+  const P = S.players, b = S.hero % P.length, O = P.filter((_, i) => i !== b);
+  return { b: P[b], q: O[(n - 1) % O.length], w: O.length > 1 ? O[n % O.length] : O[0], one: O.length === 1 };
+}
+const pasAvail = () => 1 + Object.values(S.sp).filter((i) => D.karty[i] && D.karty[i].typ === "Pas").length;
+const pasUsed = () => Object.values(S.pas).filter(Boolean).length;
+
+// step: 0 start, 1..13 stacje, 14 Karta Przebudowy
+function bindTools() {
+  const lg = $("#logo"); if (lg && !lg.dataset.b) { lg.dataset.b = 1; const im = lg.querySelector("img"); const bad = () => lg.classList.add("noimg"); im.onerror = bad; if (im.complete && !im.naturalWidth) bad(); }
+  $("#undo").onclick = undo; $("#redo").onclick = redo; $("#share").onclick = openShare; histUI();
+}
+function applySkin() {
+  const r = document.documentElement; r.dataset.theme = "light"; try { const sk = localStorage.getItem("ssw-skin"); if (sk && PAL[sk]) S.skin = sk; } catch (e) {}
+  if (!PAL[S.skin]) S.skin = "marka"; r.dataset.skin = S.skin;
+  const st = S.step, fz = st === 0 ? D.fazy[0].id : st >= 14 ? D.fazy[D.fazy.length - 1].id : D.stacje[st - 1].faza; const c = faza(fz).kolor;
+  r.style.removeProperty("--pc"); r.style.removeProperty("--poc");
+  const sw = $("#skins"); if (sw) { sw.hidden = S.step !== 0; sw.innerHTML = "<span>Wygląd:</span>" + SKINS.map(([k, n]) => "<button type='button' data-sk='" + k + "' aria-pressed='" + (S.skin === k) + "'>" + n + "</button>").join("");
+    sw.querySelectorAll("button").forEach((b) => b.onclick = () => { S.skin = b.dataset.sk; try { localStorage.setItem("ssw-skin", S.skin); } catch (e) {} save(); render(); }); }
+  const tc = document.querySelector('meta[name="theme-color"]'); if (tc) tc.content = TC[S.skin] || "#F3BF69";
+}
+function render() {
+  applySkin(); bindTools();
+  const app = $("#app"); const st = S.step;
+  $("#dots").hidden = st === 0; $("#phase").hidden = st === 0; $("#nav").hidden = false;
+  if (st === 0) { app.innerHTML = startView(); bindStart(); $("#back").hidden = true; $("#next").textContent = "Zaczynamy"; updateNav(); window.scrollTo(0, 0); return; }
+  $("#back").hidden = false;
+  if (st === 13 && !S.k1) S.k1 = Object.assign({}, S.k0);
+  drawDots();
+  if (st === 14) { app.innerHTML = summaryView(); bindSummary(); $("#next").textContent = "Nowa runda"; }
+  else { app.innerHTML = stationView(D.stacje[st - 1]); bindStation(D.stacje[st - 1]); $("#next").textContent = st === 13 ? "Zakończ i zobacz kartę" : "Dalej"; }
+  updateNav(); window.scrollTo(0, 0);
+}
+function updateNav() {
+  const bad = S.step === 0 && (!S.stereo.trim() || (S.mode === "grupa" && S.players.length < 2));
+  $("#next").disabled = bad;
+}
+function drawDots() {
+  const d = $("#dots"); d.innerHTML = "";
+  D.stacje.forEach((s) => {
+    const b = document.createElement("button"); b.style.setProperty("--c", faza(s.faza).kolor);
+    b.title = s.nr + ". " + s.nazwa; b.setAttribute("aria-label", "Stacja " + s.nr + ": " + s.nazwa);
+    b.className = s.nr < S.step ? "done" : s.nr === S.step ? "cur" : "";
+    b.onclick = () => { S.step = s.nr; save(); render(); }; d.appendChild(b);
+  });
+  const s = D.stacje[Math.min(S.step, 13) - 1];
+  $("#phase").innerHTML = S.step === 14 ? "<span>Karta Przebudowy</span><span></span>" :
+    "<span>" + esc(faza(s.faza).nazwa) + " · " + esc(faza(s.faza).opis) + "</span><span>" + s.nr + " z 13</span>";
+}
+
+// ---- siła przekonania: trzy kryteria ----
+function critBlock(key, title) {
+  const k = S[key];
+  return "<div class='crit'><h3 style='font-size:16px;margin-top:10px'>" + title + "<span class='pct' id='pct-" + key + "'>" + str(k) + "%</span></h3>" +
+    KR.map(([f, n, q]) => "<label class='l' for='" + key + f + "'>" + n + ": " + q + "</label><div class='range'><input id='" + key + f + "' data-kk='" + key + "' data-kf='" + f + "' type='range' min='0' max='10' value='" + k[f] + "'><output>" + k[f] + "</output></div>").join("") + "</div>";
+}
+function bindCrit() {
+  document.querySelectorAll("input[data-kk]").forEach((r) => r.oninput = () => {
+    S[r.dataset.kk][r.dataset.kf] = +r.value; r.nextElementSibling.textContent = r.value;
+    $("#pct-" + r.dataset.kk).textContent = str(S[r.dataset.kk]) + "%"; save();
+  });
+}
+const BRANDFOOT = "<p class='brandfoot'>Lepsze i bardziej świadome życie<br><a href='https://swiadomeslowa.pl/' target='_blank' rel='noopener'>swiadomeslowa.pl</a></p>";
+const CRIT_NOTE = "<p class='note'>Skala 0–10 (0 = wcale, 10 = całkowicie). Siła przekonania to średnia z trzech kryteriów razy 10. To ocena subiektywna: liczy się Twoje poczucie, nie wynik testu.</p>";
+
+function startView() {
+  const groups = Object.entries(D.stereotypy).map(([g, l]) =>
+    "<details class='grp'><summary>" + esc(g) + "<span class='cnt'>" + l.length + "</span></summary><div class='chips'>" + l.map((t) => "<button class='btn sm pick'>" + esc(t) + "</button>").join("") + "</div></details>").join("");
+  const grp = S.mode === "grupa" ?
+    "<label class='l' for='plist'>Imiona graczy, po przecinku (min. 2)</label><input id='plist' type='text' value='" + esc(S.players.join(", ")) + "' placeholder='np. Ania, Marek, Ola'>" +
+    (S.players.length >= 2 ? "<label class='l' for='hero'>Kto jest Bohaterem w tej rundzie?</label><select id='hero'>" + S.players.map((n, i) => "<option value='" + i + "'" + (i === S.hero % S.players.length ? " selected" : "") + ">" + esc(n) + "</option>").join("") + "</select>" : "") +
+    "<p class='note' style='margin-top:8px'>Cała grupa korzysta z jednego ekranu, np. przy stole albo na rozmowie wideo z udostępnionym ekranem. Pozostali gracze na zmianę są Pytającym i Świadkiem. Do gry w grupie wybierz temat, o którym chcesz mówić przy innych. Jeśli jest bardzo osobisty lub bolesny, zagraj solo.</p>" : "";
+  return "<p style='margin:14px 0 0'><a class='homelink' href='../'>← Wszystkie gry coachingowe</a></p><h1 style='margin-top:8px'>Stereotyp na warsztacie</h1><p class='note' style='margin:4px 0 0'>Wygląd gry wybierasz na tym ekranie (przyciski u góry). Potrzebujesz większych liter? Wybierz „Duży druk”.</p><p class='lead'>Gra o przekonaniach, które prowadzą nas za rękę. 13 stacji, około 45 minut. Badasz własny stereotyp, a nie oceniasz ludzi.</p>" +
+    "<div class='card'><h3>Zasady rozmowy</h3><ul class='rules'>" + D.zasady.map((z) => "<li>" + esc(z) + "</li>").join("") + "</ul></div>" +
+    "<p class='note' style='margin-top:12px'>Wersja testowa. Twoje odpowiedzi zapisują się tylko w tej przeglądarce. Autor ich nie widzi ani nie przechowuje. Nie wpisuj danych innych osób. Aby usunąć odpowiedzi, wyczyść dane strony w przeglądarce.</p>" +
+    "<div class='card'><h3>Kto gra?</h3><div class='row' style='margin-top:10px'><button class='btn sm seg" + (S.mode === "solo" ? " on" : "") + "' data-m='solo'>Solo</button><button class='btn sm seg" + (S.mode === "grupa" ? " on" : "") + "' data-m='grupa'>Grupa (jeden ekran)</button></div>" + grp + "</div>" +
+    "<div class='card'><h3>Jaki stereotyp badasz?</h3><label class='l' for='stereo'>Zapisz go jednym zdaniem</label><input id='stereo' type='text' value='" + esc(S.stereo) + "' placeholder='np. Nie wolno pokazywać słabości.'>" +
+    "<p class='note' style='margin-top:6px'>Albo wybierz z talii startowej (rozwiń temat) i przeformułuj po swojemu:</p>" + groups + "</div>" +
+    "<div class='card'><h3>Jak mocno w niego wierzysz?</h3>" + CRIT_NOTE + critBlock("k0", "Siła przekonania na starcie") + "</div>" + BRANDFOOT;
+}
+function bindStart() {
+  const inp = $("#stereo");
+  inp.oninput = () => { S.stereo = inp.value; save(); updateNav(); };
+  document.querySelectorAll(".pick").forEach((b) => b.onclick = () => { inp.value = b.textContent; S.stereo = inp.value; save(); updateNav(); inp.focus(); });
+  document.querySelectorAll(".seg").forEach((b) => b.onclick = () => { S.mode = b.dataset.m; save(); render(); });
+  const pl = $("#plist");
+  if (pl) pl.onchange = () => { S.players = pl.value.split(",").map((x) => x.trim()).filter(Boolean).slice(0, 8); S.hero = 0; save(); render(); };
+  const h = $("#hero"); if (h) h.onchange = () => { S.hero = +h.value; save(); };
+  bindCrit();
+}
+
+function ta(id, label, ph, hint) {
+  return "<label class='l' for='" + id + "'>" + esc(label) + "</label>" + (hint ? "<p class='note hint'>" + esc(hint) + "</p>" : "") + "<textarea id='" + id + "' data-k='" + id + "' placeholder='" + esc(ph || "") + "'>" + esc(S.x[id] || "") + "</textarea>";
+}
+function extras(n) {
+  if (n === 6) return ta("potrzeba", "Jaką potrzebę chroni ten stereotyp?", "Np. bezpieczeństwo, przynależność, kontrola, uznanie…", "Potrzeba to to, czego boisz się stracić. Stereotyp często stoi na straży właśnie tego.");
+  if (n === 7) return "<label class='l' for='akt'>Jak realne jest dziś to zagrożenie, przed którym stereotyp Cię chroni? (0 = wcale, 10 = bardzo)</label><div class='range'><input id='akt' type='range' min='0' max='10' value='" + (S.x.akt ?? 5) + "'><output id='akto'>" + (S.x.akt ?? 5) + "</output></div>" +
+    ta("za", "Dwa dowody, że to prawda", "", "Dwa konkretne zdarzenia z Twojego życia, które potwierdzają stereotyp.") + ta("przeciw", "Dwa przypadki, gdy było inaczej", "", "Dwa zdarzenia (lub osoby), które do stereotypu nie pasują.");
+  if (n === 8) return "<label class='l'>Waga: dodaj argumenty i nadaj im ciężar 1–10</label><p class='note'>10 = argument, który sam przeważa. 1 = drobiazg. Jeden mocny argument może ważyć więcej niż kilka słabych.</p><div id='scale'></div>";
+  if (n === 9) return ta("nowe", "NOWE ZDANIE", "Czasem…, a ja mogę… / Zwykle…, ale są wyjątki…", "Przepisz stereotyp tak, żeby zostawiał miejsce na wyjątki i na Twój wybór. Ma być prawdziwe i dla Ciebie użyteczne.");
+  if (n === 10) return "<label class='l'>Dotknij sfery: raz = pomaga, dwa razy = przeszkadza, trzy razy = neutralne</label><div class='sph' id='sph'></div>";
+  if (n === 11) return ta("plus", "Co w moim zachowaniu wynikającym z tego stereotypu jest dobre dla innych?", "", "Pomyśl o konkretnych osobach: bliskich, zespole, klientach.") + ta("minus", "Co im szkodzi albo ich ogranicza?", "") + ta("wroci", "Gdybym zrobił(-a) więcej z tego dobrego, co wróci do mnie?", "", "Ludzie reagują na to, jak się zachowujesz. Jak by zareagowali i co dobrego wróciłoby do Ciebie: zaufanie, spokój, szacunek, lepsze relacje? Np. „Chronię zespół otwarcie, a nie z nieufnością” → „ludzie mi ufają, mam mniej napięcia”.");
+  if (n === 12) return ta("uczy", "Ten stereotyp uczy mnie…", "", "Jaką słuszną rzecz w nim widzisz? Prawie każdy stereotyp ma ziarno prawdy.") + ta("plamka", "Przez ten stereotyp nie widzę / nie pytam o…", "", "Czego nie zauważasz albo o co nie pytasz, bo „i tak wiadomo”?");
+  if (n === 13) return ta("eksp", "Eksperyment na 7 dni (co, kiedy, z kim)", "", "Jedno małe, bezpieczne działanie, w którym zachowasz się inaczej, niż podpowiada stereotyp. Np. „We wtorek zapytam szefa o jego cel, zanim go ocenię”.") +
+    "<label class='l' for='osoba'>Kto zapyta Cię za tydzień, jak poszło? (osoba, która Cię rozliczy)</label><input id='osoba' data-k='osoba' type='text' value='" + esc(S.x.osoba || "") + "'>" +
+    "<label class='l' for='dataq'>Kiedy zapyta?</label><input id='dataq' data-k='dataq' type='date' value='" + esc(S.x.dataq || "") + "'>" +
+    "<h3 style='margin-top:18px;font-size:17px'>Pomiar po rundzie</h3>" + CRIT_NOTE + critBlock("k1", "Stare zdanie teraz") + critBlock("k2", "Nowe zdanie teraz") +
+    ta("dzieki", "Dziękuję Ci, stereotypie, za…", "", "Za co dobrego Ci służył do tej pory? Pożegnaj go z szacunkiem.");
+  return "";
+}
+function stationView(s) {
+  const f = faza(s.faza); const n = s.nr; const r = roles(n);
+  const pair = (S.qp[n] || 0) % 3; const qs = s.pytania.slice(pair * 2, pair * 2 + 2);
+  let h = "<div class='card' style='--c:" + f.kolor + ";--tb:" + f.tb + ";--oc:" + f.oc + "'><span class='tag'>" + esc(f.nazwa) + " · stacja " + n + "</span><h2 style='margin-top:10px'>" + esc(s.nazwa) + "</h2><p style='margin-top:6px'>" + esc(s.cel) + "</p>" +
+    "<div class='task'>" + esc(s.zadanie) + "</div>" +
+    ([2, 3, 4, 6].includes(n) ? "<p class='note' style='margin-top:10px'>Mów tylko tyle, ile chcesz. Nie musisz niczego tłumaczyć.</p>" : "") +
+    (r ? "<div class='roles'><div><small>Bohater</small><b>" + esc(r.b) + "</b></div><div><small>" + (r.one ? "Pytający i Świadek" : "Pytający") + "</small><b>" + esc(r.q) + "</b></div>" + (r.one ? "" : "<div><small>Świadek</small><b>" + esc(r.w) + "</b></div>") + "</div><p class='note' style='margin-top:8px'>Bohater odpowiada na pytania. Pytający je zadaje i słucha. Świadek tylko słucha, a później mówi, co zauważył.</p>" : "") +
+    "</div>" +
+    "<div class='card' style='--c:" + f.kolor + ";--tb:" + f.tb + ";--oc:" + f.oc + "'><p class='old' style='margin-bottom:8px'>„" + esc(S.stereo) + "”</p>" +
+    qs.map((q, i) => "<div class='q'><b>" + (pair * 2 + i + 1) + "</b><div>" + esc(q) + "</div></div>").join("") +
+    "<button class='btn sm' id='qmore'>Pokaż inne pytania</button>" +
+    ta("a" + n, "Moja odpowiedź (jedno–dwa zdania)", "Wybierz jedno pytanie i odpowiedz własnymi słowami.") + extras(n) +
+    "<div class='row pasrow'><button class='btn sm' id='pas'>" + (S.pas[n] ? "Cofnij Pas" : "Zagraj Pas") + "</button><span class='note'>Pasy: użyto " + pasUsed() + " z " + pasAvail() + ". Odpuszczasz pytanie bez tłumaczenia się.</span></div>" +
+    (S.pas[n] ? "<div class='passed'>Pas zagrany: to pytanie odpuszczone. Możesz przejść dalej.</div>" : "") + "</div>";
+  if (r) {
+    const o = S.x["swo" + n] || "";
+    h += "<div class='card' style='--c:" + f.kolor + ";--tb:" + f.tb + ";--oc:" + f.oc + "'><h3>Odbicie Świadka</h3><p class='note'>Świadek (" + esc(r.w) + ") mówi jednym–dwoma zdaniami. Bez ocen, rad i interpretacji.</p>" +
+      ta("sw" + n, "Usłyszałem(-am), że…", "") +
+      "<label class='l'>Bohater (" + esc(r.b) + ") odpowiada:</label><div class='row'>" + ["Tak", "Nie do końca", "Uzupełniam"].map((v) => "<button class='btn sm so" + (o === v ? " on" : "") + "' data-so='" + v + "'>" + v + "</button>").join("") + "</div></div>";
+  }
+  if (SPECIAL_AT.includes(n)) {
+    const c = D.karty[(S.sp[n] ?? -1)];
+    h += "<div class='special' id='spbox'>" + (c ? "<h3>" + esc(c.typ) + "</h3><p>" + esc(c.tekst) + "</p><button class='btn sm' id='spmore'>Losuj inną kartę</button>" :
+      "<h3>Karta specjalna</h3><p>Na tej stacji dociągnij kartę. Karta Pas daje dodatkowy Pas.</p><button class='btn sm' id='spmore'>Dociągnij kartę</button>") + "</div>";
+  }
+  return h;
+}
+function bindStation(s) {
+  const n = s.nr;
+  document.querySelectorAll("[data-k]").forEach((el) => el.oninput = () => { S.x[el.dataset.k] = el.value; save(); });
+  const a = $("#a" + n); if (a) { a.value = S.a[n] || ""; a.oninput = () => { S.a[n] = a.value; save(); }; }
+  $("#qmore").onclick = () => { S.qp[n] = ((S.qp[n] || 0) + 1) % 3; save(); render(); };
+  $("#pas").onclick = () => { if (S.pas[n]) S.pas[n] = false; else if (pasUsed() < pasAvail()) S.pas[n] = true; else { $("#pas").nextElementSibling.textContent = "Brak wolnych Pasów. Dodatkowy Pas daje karta Pas z talii specjalnej."; return; } save(); render(); };
+  if (SPECIAL_AT.includes(n)) $("#spmore").onclick = () => { S.sp[n] = Math.floor(Math.random() * D.karty.length); save(); render(); };
+  document.querySelectorAll(".so").forEach((b) => b.onclick = () => { S.x["swo" + n] = S.x["swo" + n] === b.dataset.so ? "" : b.dataset.so; save();
+    document.querySelectorAll(".so").forEach((x) => x.classList.toggle("on", x.dataset.so === S.x["swo" + n])); });
+  const rng = (id, out, key) => { const r = $("#" + id); if (!r) return; r.oninput = () => { S.x[key] = +r.value; $("#" + out).textContent = r.value; save(); }; };
+  rng("akt", "akto", "akt");
+  bindCrit();
+  if (n === 8) drawScale(); if (n === 10) drawSph();
+}
+function drawScale() {
+  const w = S.waga, sum = (l) => l.reduce((t, x) => t + x.w, 0), mx = (l) => l.reduce((m, x) => Math.max(m, x.w), 0);
+  const P = sum(w.p), M = sum(w.m), tot = P + M || 1, hp = mx(w.p), hm = mx(w.m);
+  const top = (l) => l.slice().sort((a, b) => b.w - a.w)[0];
+  const col = (key, title) => "<div class='pan'><h4>" + title + "</h4><ul>" + (w[key].map((x, i) => "<li><span>" + esc(x.t) + " (" + x.w + ")</span><button data-d='" + key + i + "' aria-label='Usuń'>×</button></li>").join("") || "<li class='note'>brak pozycji</li>") + "</ul>" +
+    (w[key].length ? "<div class='heavy'>Najcięższy: " + esc(top(w[key]).t) + " (" + top(w[key]).w + ")</div>" : "") + "</div>";
+  let v = "";
+  if (P + M > 0) {
+    if (P === M) v = "Suma jest równa. Zważ, który argument jest dla Ciebie najważniejszy.";
+    else {
+      const big = P > M ? "Służy" : "Nie służy", sm = P > M ? "Nie służy" : "Służy";
+      const bigMax = P > M ? hp : hm, smMax = P > M ? hm : hp;
+      v = "Suma przechyla na stronę „" + big + "” o " + Math.abs(P - M) + " pkt.";
+      if (smMax > bigMax) v += " Ale najcięższy argument (" + smMax + ") jest po stronie „" + sm + "”. Jeden mocny argument może ważyć więcej niż reszta, więc sprawdź, który z nich naprawdę rozstrzyga.";
+    }
+    v += " Waga pokazuje obraz, nie wyrok.";
+  }
+  $("#scale").innerHTML = "<div class='scale'>" + col("p", "SŁUŻY") + col("m", "NIE SŁUŻY") + "</div>" +
+    "<div class='bar'><i style='width:" + (P / tot * 100) + "%;background:var(--gold)'></i><i style='width:" + (M / tot * 100) + "%;background:var(--f3)'></i></div>" +
+    "<div class='sum'><span>Służy: " + P + "</span><span>Nie służy: " + M + "</span></div>" + (v ? "<div class='verdict'>" + esc(v) + "</div>" : "") +
+    "<div class='add'><input type='text' id='wt' placeholder='Argument, np. spokój w relacjach' aria-label='Argument'><select id='ww' aria-label='Ciężar 1–10'>" + [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((i) => "<option>" + i + "</option>").join("") + "</select><div class='row'><button class='btn sm' id='addp'>+ Służy</button><button class='btn sm' id='addm'>+ Nie służy</button></div></div>";
+  const add = (k) => { const t = $("#wt").value.trim(); if (!t) return; w[k].push({ t, w: +$("#ww").value }); save(); drawScale(); $("#wt").focus(); };
+  $("#addp").onclick = () => add("p"); $("#addm").onclick = () => add("m");
+  $("#scale").querySelectorAll("[data-d]").forEach((b) => b.onclick = () => { const k = b.dataset.d[0], i = +b.dataset.d.slice(1); w[k].splice(i, 1); save(); drawScale(); });
+}
+function drawSph() {
+  $("#sph").innerHTML = D.sfery.map((n) => { const v = S.sfery[n]; const c = v === "p" ? "p" : v === "m" ? "m" : "";
+    return "<button class='" + c + "' data-s='" + esc(n) + "'>" + esc(n) + "<span>" + (v === "p" ? "pomaga" : v === "m" ? "przeszkadza" : v === "n" ? "neutralne" : "—") + "</span></button>"; }).join("");
+  $("#sph").querySelectorAll("button").forEach((b) => b.onclick = () => { const n = b.dataset.s, v = S.sfery[n];
+    S.sfery[n] = !v ? "p" : v === "p" ? "m" : v === "m" ? "n" : undefined; save(); drawSph(); });
+}
+
+// ---- Karta Przebudowy ----
+const SW = { p: "pomaga", m: "przeszkadza", n: "neutralne" };
+function wagaSum(k) { return S.waga[k].reduce((t, x) => t + x.w, 0); }
+function wagaTop(k) { const t = S.waga[k].slice().sort((a, b) => b.w - a.w)[0]; return t ? t.t + " (" + t.w + ")" : "—"; }
+function sheetText() {
+  const A = (n) => (S.a[n] || "").trim(), X = (k) => (S.x[k] || "").trim();
+  const sw = (k) => S.waga[k].map((x) => x.t + " (" + x.w + ")").join("; ") || "—";
+  const sf = D.sfery.map((n) => n + ": " + (SW[S.sfery[n]] || "—")).join(", ");
+  const k1 = S.k1 || S.k0, L = [];
+  const kd = (k) => "pewność " + k.p + ", automatyzm " + k.a + ", wpływ " + k.w;
+  L.push("KARTA PRZEBUDOWY — Stereotyp na warsztacie", "");
+  if (group()) L.push("Gracze: " + S.players.join(", ") + " · Bohater: " + S.players[S.hero % S.players.length], "");
+  L.push("STARE ZDANIE: " + S.stereo, "Siła przekonania na starcie: " + str(S.k0) + "% (" + kd(S.k0) + ")", "");
+  L.push("KORZENIE", "Jak brzmi i czuję to zdanie: " + (A(1) || "—"), "Pierwszy raz: " + (A(2) || "—"), "Kto mi to dał: " + (A(3) || "—"), "Głos pokoleń: " + (A(4) || "—"), "Początek historii: " + (A(5) || "—"), "");
+  L.push("TARCZA", "Przed czym chroni: " + (A(6) || "—"), "Potrzeba pod spodem: " + (X("potrzeba") || "—"),
+    "Aktualność zagrożenia (0–10): " + (S.x.akt ?? 5), "Dowody za: " + (X("za") || "—"), "Kontrprzykłady: " + (X("przeciw") || "—"), "");
+  L.push("WAGA", "Służy (" + wagaSum("p") + "): " + sw("p"), "Nie służy (" + wagaSum("m") + "): " + sw("m"), "Najcięższy argument — służy: " + wagaTop("p") + "; nie służy: " + wagaTop("m"), "");
+  L.push("NOWE ZDANIE: " + (X("nowe") || "—"), "");
+  L.push("SIEĆ", "Sfery życia — " + sf, "Dobre dla otoczenia: " + (X("plus") || "—"), "Szkodzi otoczeniu: " + (X("minus") || "—"), "Co wróci do mnie: " + (X("wroci") || "—"), "");
+  L.push("LEKCJA", "Uczy mnie: " + (X("uczy") || "—"), "Ślepa plamka: " + (X("plamka") || "—"),
+    "Eksperyment 7 dni: " + (X("eksp") || "—"), "Osoba pytająca: " + (X("osoba") || "—") + (X("dataq") ? " (data: " + X("dataq") + ")" : ""),
+    "Siła po rundzie: stare zdanie " + str(k1) + "% (" + kd(k1) + "), nowe zdanie " + str(S.k2) + "% (" + kd(S.k2) + ")",
+    "Dziękuję stereotypowi za: " + (X("dzieki") || "—"));
+  const ps = Object.keys(S.pas).filter((n) => S.pas[n]);
+  L.push("", "Pasy zagrane na stacjach: " + (ps.join(", ") || "brak"));
+  if (group()) {
+    const sws = D.stacje.map((s) => { const t = X("sw" + s.nr); return t ? s.nr + ". " + s.nazwa + ": „" + t + "”" + (S.x["swo" + s.nr] ? " → " + S.x["swo" + s.nr] : "") : ""; }).filter(Boolean);
+    if (sws.length) L.push("", "ODBICIA ŚWIADKA", ...sws);
+  }
+  if (S.stamp) L.push("", "PIECZĘĆ PRZEBUDOWY: " + S.stamp);
+  return L.join("\n");
+}
+function strRow(label, k, c) { return "<div><span>" + label + "</span><i><s style='width:" + str(k) + "%;--c:" + c + "'></s></i><span>" + str(k) + "%</span></div>"; }
+function summaryView() {
+  const k1 = S.k1 || S.k0, X = (k) => (S.x[k] || "").trim();
+  const sfery = D.sfery.filter((n) => S.sfery[n]).map((n) => "<li>" + esc(n) + ": " + SW[S.sfery[n]] + "</li>").join("");
+  return "<h2 style='margin-top:18px'>Karta Przebudowy</h2><p class='lead'>To Twoja pamiątka z rundy. Skopiuj ją i zapisz w notatkach.</p>" +
+    "<div class='kp'><div class='kh'>Świadome Słowa · Karta Przebudowy</div>" +
+    (group() ? "<p class='note' style='text-align:center;margin:6px 0 0'>Bohater: " + esc(S.players[S.hero % S.players.length]) + " · Gracze: " + esc(S.players.join(", ")) + "</p>" : "") +
+    "<div class='pair'><small>Stare zdanie</small><div class='old'>„" + esc(S.stereo) + "”</div></div>" +
+    "<div class='pair'><small>Nowe zdanie</small><div class='new'>„" + esc(X("nowe") || "jeszcze nie zapisano (stacja 9)") + "”</div></div><hr>" +
+    "<small style='font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:700'>Siła przekonania (0–100%)</small><div class='str'>" +
+    strRow("Na starcie", S.k0, "var(--f1)") + strRow("Stare zdanie teraz", k1, "var(--f3)") + strRow("Nowe zdanie teraz", S.k2, "var(--gold)") + "</div><hr>" +
+    "<div><b>Waga:</b> służy " + wagaSum("p") + " pkt, nie służy " + wagaSum("m") + " pkt. Najcięższe argumenty: " + esc(wagaTop("p")) + " oraz " + esc(wagaTop("m")) + ".</div>" +
+    (sfery ? "<ul>" + sfery + "</ul>" : "") + "<hr>" +
+    "<div><b>Eksperyment 7 dni:</b> " + esc(X("eksp") || "—") + "</div>" +
+    "<div><b>Zapyta:</b> " + esc(X("osoba") || "—") + (X("dataq") ? " (" + esc(X("dataq")) + ")" : "") + "</div>" +
+    (S.stamp ? "<div class='stamp'><div>PRZEBUDOWANE<small>" + esc(S.stamp) + "</small></div></div>" : "") + "</div>" +
+    "<div class='row' style='margin-top:14px'><button class='btn pri' id='copy'>Kopiuj kartę</button>" + (S.stamp ? "" : "<button class='btn' id='stamp'>Przybij pieczęć</button>") + "<span class='note' id='cmsg'></span></div>" +
+    "<details><summary>Pełny tekst karty</summary><div class='sheet' id='sheet' style='margin-top:10px'>" + esc(sheetText()) + "</div></details>" + BRANDFOOT;
+}
+function bindSummary() {
+  $("#copy").onclick = async () => {
+    const t = sheetText(); const msg = $("#cmsg");
+    try { await navigator.clipboard.writeText(t); msg.textContent = "Skopiowano."; }
+    catch (e) { const d = document.querySelector("details"); d.open = true; const r = document.createRange(); r.selectNodeContents($("#sheet")); const sel = getSelection(); sel.removeAllRanges(); sel.addRange(r); msg.textContent = "Zaznaczono tekst. Skopiuj go ręcznie."; }
+  };
+  const st = $("#stamp"); if (st) st.onclick = () => { S.stamp = new Date().toLocaleDateString("pl-PL"); save(); render(); };
+}
+
+$("#back").onclick = () => { if (S.step > 0) { S.step--; save(); render(); } };
+$("#next").onclick = () => {
+  if ($("#next").disabled) return;
+  if (S.step === 14) { if (!confirm("Zacząć nową rundę? Obecne odpowiedzi i Karta Przebudowy zostaną usunięte z tego urządzenia. Najpierw możesz skopiować kartę.")) return; const keep = { skin: S.skin, mode: S.mode, players: S.players, hero: S.players.length ? (S.hero + 1) % S.players.length : 0 }; S = Object.assign(fresh(), keep); save(); render(); return; }
+  S.step++; save(); render();
+};
+H.last = snap();
+render();
+</script>
+
+<script>
+/* Instalacja i tryb bez internetu */
+(function () {
+  if ("serviceWorker" in navigator && location.protocol !== "file:") {
+    window.addEventListener("load", function () { navigator.serviceWorker.register("../sw.js").catch(function () {}); });
+  }
+  var standalone = (window.matchMedia && matchMedia("(display-mode: standalone)").matches) || navigator.standalone;
+  if (standalone) return;
+  try { if (localStorage.getItem("ssw-install-dismissed")) return; } catch (e) {}
+  var ios = /iphone|ipad|ipod/i.test(navigator.userAgent);
+  var deferred = null;
+  function bar(html, withBtn) {
+    var b = document.createElement("div");
+    b.id = "installbar";
+    b.style.cssText = "max-width:640px;margin:10px auto 0;padding:10px 12px;border:1px solid var(--line);border-radius:12px;background:var(--paper);color:var(--ink);font-size:14px;display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap";
+    b.innerHTML = "<span style='flex:1;min-width:180px'>" + html + "</span><span style='display:flex;gap:8px'>" +
+      (withBtn ? "<button class='btn sm pri' id='instgo'>Zainstaluj</button>" : "") + "<button class='btn sm' id='instno'>Zamknij</button></span>";
+    document.body.insertBefore(b, document.body.firstChild);
+    document.getElementById("instno").onclick = function () { b.remove(); try { localStorage.setItem("ssw-install-dismissed", "1"); } catch (e) {} };
+    var go = document.getElementById("instgo");
+    if (go) go.onclick = function () { if (deferred) { deferred.prompt(); deferred.userChoice.finally(function () { b.remove(); }); } };
+  }
+  window.addEventListener("beforeinstallprompt", function (e) {
+    e.preventDefault(); deferred = e;
+    if (!document.getElementById("installbar")) bar("Możesz dodać grę do telefonu lub komputera jak zwykłą aplikację.", true);
+  });
+  if (ios && !/crios|fxios/i.test(navigator.userAgent)) {
+    bar("Aby dodać grę do ekranu głównego: dotknij ikony Udostępnij, a potem „Dodaj do ekranu początkowego”.", false);
+  }
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#F3BF69">
+<meta name="robots" content="noindex">
+<meta name="description" content="Gry coachingowe: narzędzia do świadomego zarządzania swoim życiem. Gry i ćwiczenia od Świadome Słowa.">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Gry coachingowe">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<title>Gry coachingowe</title>
+<style>@font-face{font-family:'Lora';font-style:normal;font-weight:500;font-display:swap;src:url(fonts/lora-latin-500-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Lora';font-style:normal;font-weight:700;font-display:swap;src:url(fonts/lora-latin-700-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Lora';font-style:italic;font-weight:500;font-display:swap;src:url(fonts/lora-latin-500-italic.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Lora';font-style:normal;font-weight:500;font-display:swap;src:url(fonts/lora-latin-ext-500-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Lora';font-style:normal;font-weight:700;font-display:swap;src:url(fonts/lora-latin-ext-700-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Lora';font-style:italic;font-weight:500;font-display:swap;src:url(fonts/lora-latin-ext-500-italic.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Source Sans 3';font-style:normal;font-weight:400;font-display:swap;src:url(fonts/source-sans-3-latin-400-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Source Sans 3';font-style:normal;font-weight:600;font-display:swap;src:url(fonts/source-sans-3-latin-600-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Source Sans 3';font-style:normal;font-weight:700;font-display:swap;src:url(fonts/source-sans-3-latin-700-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Source Sans 3';font-style:normal;font-weight:400;font-display:swap;src:url(fonts/source-sans-3-latin-ext-400-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Source Sans 3';font-style:normal;font-weight:600;font-display:swap;src:url(fonts/source-sans-3-latin-ext-600-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Source Sans 3';font-style:normal;font-weight:700;font-display:swap;src:url(fonts/source-sans-3-latin-ext-700-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Lato';font-style:normal;font-weight:400;font-display:swap;src:url(fonts/lato-latin-400-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Lato';font-style:normal;font-weight:400;font-display:swap;src:url(fonts/lato-latin-ext-400-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Lato';font-style:normal;font-weight:700;font-display:swap;src:url(fonts/lato-latin-700-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Lato';font-style:normal;font-weight:700;font-display:swap;src:url(fonts/lato-latin-ext-700-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Cinzel';font-style:normal;font-weight:700;font-display:swap;src:url(fonts/cinzel-latin-700-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Cinzel';font-style:normal;font-weight:700;font-display:swap;src:url(fonts/cinzel-latin-ext-700-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}</style>
+<style>
+:root{--bg:#F8F1E3;--paper:#FFFDF8;--ink:#2C2620;--head:#5A2D12;--soft:#6B5442;--gold:#D9A24E;--line:#E0D3B8;--muted:#5C4A3A;--on-dark:#FFFDF8;--band:#F3BF69;--pc:#5A2D12;--poc:#FFFDF8;
+  --font:"Lato",Calibri,"Segoe UI",sans-serif;color-scheme:light}
+:root[data-skin="duzy"]{--bg:#FFFFFF;--paper:#FFFFFF;--ink:#1A1410;--head:#3B1D0C;--soft:#3F3228;--gold:#B8763A;--line:#8F7B63;--muted:#43362B;--on-dark:#FFFFFF;--band:#FFFFFF;--pc:#3B1D0C;--poc:#FFFFFF}
+*{box-sizing:border-box}
+html{overflow-x:clip}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);font-size:18px;line-height:1.5;padding:0 max(16px,env(safe-area-inset-left,0px)) 40px}
+.wrap{max-width:640px;margin:0 auto}
+[hidden]{display:none!important}
+header.top{padding-block:14px 8px}
+.toprow{position:relative;display:flex;align-items:center;justify-content:space-between;gap:10px}
+.toprow::before{content:"";position:absolute;z-index:-1;top:-14px;bottom:-10px;left:calc(50% - 50vw);right:calc(50% - 50vw);background:var(--band)}
+:root[data-skin="duzy"] .toprow::before{display:none}
+:root[data-skin="duzy"] .toprow{border-bottom:2px solid var(--line);padding-bottom:10px}
+.logo img{height:40px;width:auto;display:block}
+.logo.noimg img{display:none}.logo .alt{display:none;font-weight:700;color:var(--head)}.logo.noimg .alt{display:inline}
+h1,h2,h3{color:var(--head);margin:0;text-wrap:balance}
+h1{font-family:"Cinzel","Lato",serif;font-weight:700;letter-spacing:.01em;font-size:36px;line-height:1.15;margin-top:26px}
+:root[data-skin="duzy"] h1{font-family:var(--font);font-size:38px}
+h2{font-size:24px;line-height:1.25}h3{font-size:21px;line-height:1.3}
+p{margin:0 0 10px}
+.lead{font-size:19px;color:var(--muted);margin-top:10px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:18px;margin-top:16px;box-shadow:0 2px 10px rgba(60,40,20,.07)}
+:root[data-skin="duzy"] .card{border:2px solid var(--line);box-shadow:none}
+.card.soon{background:transparent;border-style:dashed;box-shadow:none}
+.meta{font-size:15px;color:var(--muted);margin:2px 0 12px}
+.btn{display:inline-block;font:inherit;font-weight:700;font-size:18px;text-decoration:none;text-align:center;border-radius:14px;border:1px solid var(--pc);background:var(--pc);color:var(--poc);padding:13px 22px;min-height:48px;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--head);border-color:var(--soft)}
+:root[data-skin="duzy"] .btn{font-size:20px;min-height:56px}
+:root[data-skin="duzy"] body{font-size:21px}
+:root[data-skin="duzy"] .lead{font-size:22px}
+:root[data-skin="duzy"] .meta,:root[data-skin="duzy"] .note,:root[data-skin="duzy"] .sw button,:root[data-skin="duzy"] .brandfoot{font-size:17px}
+.btn:focus-visible,.sw button:focus-visible,a:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
+ul.rules{padding-left:20px;margin:10px 0 0}ul.rules li{margin-bottom:6px}
+.note{font-size:15px;color:var(--muted)}
+.sw{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-top:12px}
+.sw span{font-weight:700;color:var(--head);margin-right:4px}
+.sw button{font:inherit;font-size:15px;font-weight:700;border:1px solid var(--line);background:var(--paper);color:var(--head);border-radius:999px;padding:11px 16px;min-height:44px;cursor:pointer}
+.sw button[aria-pressed="true"]{background:var(--head);color:var(--on-dark);border-color:var(--head)}
+.brandfoot{text-align:center;color:var(--muted);font-size:15px;margin:30px 0 8px}
+.brandfoot a{color:var(--head);font-weight:700}
+@media (prefers-reduced-motion:no-preference){.card{animation:in .25s ease-out}@keyframes in{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}}
+@media (max-width:420px){h1{font-size:31px}}
+
+.wrap{max-width:1040px}
+.lead,main>.card,.brandfoot{max-width:640px}
+.tiles{display:grid;grid-template-columns:1fr;gap:18px;margin-top:20px}
+@media (min-width:720px){.tiles{grid-template-columns:repeat(3,1fr)}}
+.tile{display:flex;flex-direction:column;background:var(--paper);border:1px solid var(--line);border-radius:18px;overflow:hidden;text-decoration:none;color:var(--ink);box-shadow:0 2px 10px rgba(60,40,20,.07);transition:transform .15s ease,box-shadow .15s ease}
+.tile:hover{transform:translateY(-3px);box-shadow:0 10px 24px rgba(60,40,20,.14)}
+.tile img{display:block;width:100%;height:auto;aspect-ratio:960/504;object-fit:cover;background:var(--line)}
+.tile .tb{display:flex;flex-direction:column;flex:1;padding:16px 18px 18px}
+.tile .tt{font-weight:700;font-size:22px;line-height:1.25;color:var(--head)}
+.tile .meta{display:block;margin:4px 0 10px}
+.tile .td{flex:1;margin-bottom:14px}
+.tile .btn{align-self:flex-start}
+:root[data-skin="duzy"] .tile{border:2px solid var(--line);box-shadow:none}
+:root[data-skin="duzy"] .tile .tt{font-size:25px}
+@media (prefers-reduced-motion:reduce){.tile{transition:none}.tile:hover{transform:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top"><div class="toprow"><a class="logo" id="logo" href="https://swiadomeslowa.pl/" target="_blank" rel="noopener"><img src="logo.png" alt="Świadome Słowa" height="40"><span class="alt">Świadome Słowa</span></a></div></header>
+  <main>
+    <h1>Gry coachingowe</h1>
+    <p class="lead">Narzędzia do świadomego zarządzania swoim życiem. Gry i ćwiczenia, które pomagają zatrzymać się, przyjrzeć sobie i zrobić jeden mały krok.</p>
+
+    <div class="tiles">
+      <a class="tile" href="stereotyp/" aria-labelledby="g1">
+        <img src="img/kafel-stereotyp.jpg" width="960" height="504" alt="Plansza gry: trasa 13 stacji i Karta Przebudowy">
+        <span class="tb"><span class="tt" id="g1">Stereotyp na warsztacie</span>
+        <span class="meta">13 stacji · około 45 minut · solo albo w grupie</span>
+        <span class="td">Gra o przekonaniach, które prowadzą nas za rękę. Badasz własny stereotyp, a na końcu dostajesz Kartę Przebudowy.</span>
+        <span class="btn">Zagraj</span></span>
+      </a>
+      <a class="tile" href="poznajmy-sie-glebiej/" aria-labelledby="g3">
+        <img src="img/kafel-psg.jpg" width="960" height="504" alt="Trzy karty z pytaniami do rozmowy">
+        <span class="tb"><span class="tt" id="g3">Poznajmy się głębiej</span>
+        <span class="meta">150 pytań w 5 kręgach · od 2 osób</span>
+        <span class="td">Pytania, które zbliżają: o sobie, emocjach, relacjach, drodze i sensie. Zawsze możesz spasować.</span>
+        <span class="btn">Zagraj</span></span>
+      </a>
+      <a class="tile" href="z-dziecmi/" aria-labelledby="g4">
+        <img src="img/kafel-dzieci.jpg" width="960" height="504" alt="Dwie granatowe karty gry dla dzieci">
+        <span class="tb"><span class="tt" id="g4">Poznajmy się głębiej z dziećmi</span>
+        <span class="meta">51 pytań · dla rodzica i dziecka</span>
+        <span class="td">Proste pytania do wspólnej rozmowy z dzieckiem: o tym, co lubi, co je złości i o czym marzy.</span>
+        <span class="btn">Zagraj</span></span>
+      </a>
+    </div>
+
+    <section class="card soon" aria-labelledby="g2">
+      <h3 id="g2">Kolejne narzędzia</h3>
+      <p class="note" style="margin:6px 0 0">Przygotowujemy następne gry i ćwiczenia. Pojawią się tutaj.</p>
+    </section>
+
+    <section class="card" aria-labelledby="zas">
+      <h2 id="zas">Dobrze wiedzieć</h2>
+      <ul class="rules">
+        <li>Twoje odpowiedzi w grze Stereotyp zapisują się tylko w tej przeglądarce. Autor ich nie widzi i nie przechowuje. Gry z kartami niczego nie zbierają. Nie trzeba zakładać konta.</li>
+        <li>To nie terapia. Gdy emocje są bardzo silne, zatrzymaj grę. Pomoc w kryzysie: 116 123 (wsparcie emocjonalne dla dorosłych), 112 (zagrożenie życia).</li>
+        <li>To wersja testowa. Nie wpisuj danych innych osób.</li>
+      </ul>
+      <div class="sw" id="skins" role="group" aria-label="Wygląd"></div>
+      <p class="note" style="margin:8px 0 0">Wygląd obowiązuje we wszystkich grach.</p>
+    </section>
+  </main>
+  <p class="brandfoot">Lepsze i bardziej świadome życie<br><a href="https://swiadomeslowa.pl/" target="_blank" rel="noopener">swiadomeslowa.pl</a></p>
+</div>
+<script>
+(function () {
+  var SK = [["marka", "Marka"], ["duzy", "Duży druk"]], TC = { marka: "#F3BF69", duzy: "#FFFFFF" };
+  var cur = "marka"; try { var s = localStorage.getItem("ssw-skin"); if (s && TC[s]) cur = s; } catch (e) {}
+  function apply() {
+    document.documentElement.dataset.skin = cur;
+    var tc = document.querySelector('meta[name="theme-color"]'); if (tc) tc.content = TC[cur];
+    var sw = document.getElementById("skins");
+    sw.innerHTML = "<span>Wygląd:</span>" + SK.map(function (k) { return "<button type='button' data-sk='" + k[0] + "' aria-pressed='" + (cur === k[0]) + "'>" + k[1] + "</button>"; }).join("");
+    sw.querySelectorAll("button").forEach(function (b) { b.onclick = function () { cur = b.dataset.sk; try { localStorage.setItem("ssw-skin", cur); } catch (e) {} apply(); }; });
+  }
+  apply();
+  var lg = document.getElementById("logo"), im = lg.querySelector("img"); var bad = function () { lg.classList.add("noimg"); }; im.onerror = bad; if (im.complete && !im.naturalWidth) bad();
+})();
+</script>
+<script>
+/* Instalacja i tryb bez internetu */
+(function () {
+  if ("serviceWorker" in navigator && location.protocol !== "file:") {
+    window.addEventListener("load", function () { navigator.serviceWorker.register("sw.js").catch(function () {}); });
+  }
+  var standalone = (window.matchMedia && matchMedia("(display-mode: standalone)").matches) || navigator.standalone;
+  if (standalone) return;
+  try { if (localStorage.getItem("ssw-install-dismissed")) return; } catch (e) {}
+  var ios = /iphone|ipad|ipod/i.test(navigator.userAgent);
+  var deferred = null;
+  function bar(html, withBtn) {
+    var b = document.createElement("div");
+    b.id = "installbar";
+    b.style.cssText = "max-width:640px;margin:10px auto 0;padding:10px 12px;border:1px solid var(--line);border-radius:12px;background:var(--paper);color:var(--ink);font-size:14px;display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap";
+    b.innerHTML = "<span style='flex:1;min-width:180px'>" + html + "</span><span style='display:flex;gap:8px'>" +
+      (withBtn ? "<button class='btn sm pri' id='instgo'>Zainstaluj</button>" : "") + "<button class='btn sm' id='instno'>Zamknij</button></span>";
+    document.body.insertBefore(b, document.body.firstChild);
+    document.getElementById("instno").onclick = function () { b.remove(); try { localStorage.setItem("ssw-install-dismissed", "1"); } catch (e) {} };
+    var go = document.getElementById("instgo");
+    if (go) go.onclick = function () { if (deferred) { deferred.prompt(); deferred.userChoice.finally(function () { b.remove(); }); } };
+  }
+  window.addEventListener("beforeinstallprompt", function (e) {
+    e.preventDefault(); deferred = e;
+    if (!document.getElementById("installbar")) bar("Możesz dodać grę do telefonu lub komputera jak zwykłą aplikację.", true);
+  });
+  if (ios && !/crios|fxios/i.test(navigator.userAgent)) {
+    bar("Aby dodać grę do ekranu głównego: dotknij ikony Udostępnij, a potem „Dodaj do ekranu początkowego”.", false);
+  }
+})();
+</script>
+</body>
+</html>
