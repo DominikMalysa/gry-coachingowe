@@ -1,5 +1,5 @@
 /* Gry coachingowe: praca bez internetu dla strony głównej i wszystkich gier. Przy każdej zmianie plików zwiększ numer wersji. */
-const V = "gc-v2";
+const V = "gc-v3";
 const FONTS = ["fonts/lora-latin-500-normal.woff2", "fonts/lora-latin-700-normal.woff2", "fonts/lora-latin-500-italic.woff2", "fonts/lora-latin-ext-500-normal.woff2", "fonts/lora-latin-ext-700-normal.woff2", "fonts/lora-latin-ext-500-italic.woff2", "fonts/source-sans-3-latin-400-normal.woff2", "fonts/source-sans-3-latin-600-normal.woff2", "fonts/source-sans-3-latin-700-normal.woff2", "fonts/source-sans-3-latin-ext-400-normal.woff2", "fonts/source-sans-3-latin-ext-600-normal.woff2", "fonts/source-sans-3-latin-ext-700-normal.woff2", "fonts/lato-latin-400-normal.woff2", "fonts/lato-latin-ext-400-normal.woff2", "fonts/lato-latin-700-normal.woff2", "fonts/lato-latin-ext-700-normal.woff2", "fonts/cinzel-latin-700-normal.woff2", "fonts/cinzel-latin-ext-700-normal.woff2"];
 const SHELL = ["./", "index.html", "stereotyp/", "stereotyp/index.html", "poznajmy-sie-glebiej/", "poznajmy-sie-glebiej/index.html", "z-dziecmi/", "z-dziecmi/index.html", "img/kafel-stereotyp.jpg", "img/kafel-psg.jpg", "img/kafel-dzieci.jpg", "manifest.webmanifest", "icon-192.png", "icon-512.png",
   "icon-maskable-512.png", "apple-touch-icon.png", "favicon-32.png", "logo.png"].concat(FONTS);
